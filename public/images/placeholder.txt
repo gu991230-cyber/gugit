@@ -1,0 +1,27 @@
+이미지 파일 안내
+================
+
+이 폴더에 다음 파일을 추가하세요:
+
+1. hero-bg.jpg - 배경 이미지 파일 (모바일용)
+   - 권장 해상도: 1920x1080 이상
+   - 콘텐츠: 고층 건물, 기업 환경, 도시 스카이라인
+   - 파일 크기: 500KB 이하 권장 (웹 최적화)
+
+무료 이미지 소스:
+- Unsplash: https://unsplash.com/
+- Pexels: https://www.pexels.com/
+- Pixabay: https://pixabay.com/
+
+검색 키워드:
+- "corporate buildings"
+- "city skyline"
+- "business district"
+- "modern architecture"
+- "office buildings"
+- "skyscrapers"
+
+이미지 최적화 팁:
+- JPG 형식 사용 (용량 절약)
+- 적절한 압축 적용
+- 반응형을 위해 다양한 해상도 준비 
