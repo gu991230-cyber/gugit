@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { collection, getDocs, orderBy, query } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
-import { Search, Eye, Calendar, Phone, User, Mail } from 'lucide-react';
+import { Search, Eye, Calendar, Phone, User } from 'lucide-react';
 
 interface ConsultationData {
   id: string;
@@ -12,7 +12,7 @@ interface ConsultationData {
   email: string;
   service: string;
   message: string;
-  createdAt: any;
+  createdAt: Date | null;
   submittedAt: string;
 }
 
