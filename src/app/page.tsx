@@ -1,8 +1,31 @@
 'use client';
 
 import Link from 'next/link';
+import { db } from '@/lib/firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 export default function Home() {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      await addDoc(collection(db, 'contacts'), {
+        name: formData.get('name'),
+        phone: formData.get('phone'),
+        inquiry: formData.get('inquiry'),
+        privacy: formData.get('privacy'),
+        timestamp: new Date()
+      });
+      
+      alert('상담 신청이 접수되었습니다. 24시간 내에 연락드리겠습니다.');
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error:', error);
+      alert('오류가 발생했습니다. 다시 시도해주세요.');
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -74,21 +97,7 @@ export default function Home() {
               <p className="text-lg text-gray-600">전문 변호사가 직접 상담해드립니다</p>
             </div>
 
-            <form action="/api/contact" method="POST" className="space-y-6" onSubmit={(e) => {
-              e.preventDefault();
-              const formData = new FormData(e.currentTarget);
-              fetch('/api/contact', {
-                method: 'POST',
-                body: formData
-              }).then(response => {
-                if (response.ok) {
-                  alert('상담 신청이 접수되었습니다. 24시간 내에 연락드리겠습니다.');
-                  (e.target as HTMLFormElement).reset();
-                } else {
-                  alert('오류가 발생했습니다. 다시 시도해주세요.');
-                }
-              });
-            }}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   이름 *
