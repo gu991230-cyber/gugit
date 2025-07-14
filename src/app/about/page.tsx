@@ -61,7 +61,7 @@ export default function About() {
               <div key={index} className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{specialty.title}</h3>
                 {specialty.subtitle && (
-                  <p className="text-orange-600 font-medium mb-4">({specialty.subtitle})</p>
+                  <p className="text-orange-500 font-medium mb-4">({specialty.subtitle})</p>
                 )}
                 <ul className="space-y-2">
                   {specialty.items.map((item, idx) => (
@@ -105,7 +105,7 @@ export default function About() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">왜 전문화인가?</h2>
-          <h3 className="text-xl font-bold text-center text-orange-600 mb-4">선택과 집중의 철학</h3>
+          <h3 className="text-xl font-bold text-center text-orange-500 mb-4">선택과 집중의 철학</h3>
           <p className="text-lg text-center text-gray-600 mb-16 max-w-4xl mx-auto">
             저희는 모든 분야를 다루지 않습니다. 오직 4개 전문 분야에서만 최고의 결과를 만들어냅니다.
           </p>
@@ -176,7 +176,7 @@ export default function About() {
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">김정숙</h3>
-                <p className="text-orange-600 font-medium">대표변호사</p>
+                <p className="text-orange-500 font-medium">대표변호사</p>
                 <p className="text-sm text-gray-600 mt-1">15년 경력</p>
               </div>
               
@@ -302,7 +302,7 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-600 mb-4">1단계</div>
+              <div className="text-2xl font-bold text-orange-500 mb-4">1단계</div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">무료 상담</h4>
               <ul className="text-gray-600 space-y-2">
                 <li>• 사건 개요 파악</li>
@@ -311,7 +311,7 @@ export default function About() {
               </ul>
             </div>
             <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-600 mb-4">2단계</div>
+              <div className="text-2xl font-bold text-orange-500 mb-4">2단계</div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">전략 수립</h4>
               <ul className="text-gray-600 space-y-2">
                 <li>• 상세 사실관계 조사</li>
@@ -320,7 +320,7 @@ export default function About() {
               </ul>
             </div>
             <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-600 mb-4">3단계</div>
+              <div className="text-2xl font-bold text-orange-500 mb-4">3단계</div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">사건 해결</h4>
               <ul className="text-gray-600 space-y-2">
                 <li>• 신속한 법적 절차 진행</li>

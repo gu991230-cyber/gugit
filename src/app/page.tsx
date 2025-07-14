@@ -75,7 +75,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               저희는 특화된 분야의 선택과 집중을 합니다.
             </h2>
-            <p className="text-xl text-orange-600 font-bold mb-2">입찰권·회원권·투자사기·폰지사기·전화사기 분야의</p>
+            <p className="text-xl text-orange-500 font-bold mb-2">입찰권·회원권·투자사기·폰지사기·전화사기 분야의</p>
             <p className="text-xl text-gray-900 mb-4">완벽한 피해 회복으로 고객의 신뢰를 이끌어가겠습니다.</p>
             <p className="text-lg text-gray-600">15년의 경험으로 축적된 전문성과 신뢰성</p>
           </div>
@@ -83,15 +83,15 @@ export default function Home() {
           {/* Stats */}
           <div className="flex justify-center gap-6 mb-8">
             <div className="bg-white rounded-lg border border-gray-200 shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-600 mb-1">15</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">15</div>
               <div className="text-sm font-medium text-gray-600">년의 경험</div>
             </div>
             <div className="bg-white rounded-lg border border-gray-200 shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-600 mb-1">900+</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">900+</div>
               <div className="text-sm font-medium text-gray-600">성공 사례</div>
             </div>
             <div className="bg-white rounded-lg border border-gray-200 shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-600 mb-1">91%</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">91%</div>
               <div className="text-sm font-medium text-gray-600">승소율</div>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function Home() {
                   type="checkbox"
                   id="privacy"
                   name="privacy"
-                  className="mt-1 h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+                  className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"
                   required
                 />
                 <label htmlFor="privacy" className="text-sm text-gray-600">

@@ -47,7 +47,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-orange-400 font-medium transition-colors py-2 px-1"
+                className="text-gray-300 hover:text-orange-500 font-medium transition-colors py-2 px-1"
               >
                 {item.name}
               </Link>
@@ -67,7 +67,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-300 hover:text-orange-400 hover:bg-gray-600 transition-colors"
+            className="md:hidden p-2 rounded-md text-gray-300 hover:text-orange-500 hover:bg-gray-600 transition-colors"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -81,7 +81,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-3 text-gray-300 hover:text-orange-400 hover:bg-gray-600 font-medium rounded-lg transition-colors"
+                  className="block px-3 py-3 text-gray-300 hover:text-orange-500 hover:bg-gray-600 font-medium rounded-lg transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

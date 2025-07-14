@@ -141,19 +141,19 @@ export default function Services() {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">900+</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">900+</div>
               <div className="text-lg font-medium text-gray-700">승소 사례</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">91%</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">91%</div>
               <div className="text-lg font-medium text-gray-700">승소율</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">190억</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">190억</div>
               <div className="text-lg font-medium text-gray-700">피해금 회수액</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">4개월</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">4개월</div>
               <div className="text-lg font-medium text-gray-700">평균 해결기간</div>
             </div>
           </div>
