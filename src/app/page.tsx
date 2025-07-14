@@ -57,9 +57,13 @@ export default function Home() {
           <div className="mb-8">
             <div className="inline-flex items-center justify-center w-20 h-20 mb-4">
               <img 
-                src="/images/logo.PNG" 
+                src="/images/logo-new.png" 
                 alt="김정숙 법률사무소 로고" 
-                className="w-20 h-20 object-contain drop-shadow-lg"
+                className="w-20 h-20 object-contain rounded-xl drop-shadow-lg"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.05) 0%, rgba(251, 146, 60, 0.05) 100%)',
+                  padding: '4px'
+                }}
               />
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h1>
