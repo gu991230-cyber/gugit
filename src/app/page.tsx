@@ -55,11 +55,12 @@ export default function Home() {
         <div className="relative z-10 max-w-4xl mx-auto px-8 text-center w-full">
           {/* Logo */}
           <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-500 rounded-xl shadow-lg mb-4">
-              <div className="flex items-baseline">
-                <span className="text-4xl font-bold text-white">J</span>
-                <span className="text-xl font-bold text-white ml-1">S</span>
-              </div>
+            <div className="inline-flex items-center justify-center w-20 h-20 mb-4">
+              <img 
+                src="/images/logo.png" 
+                alt="김정숙 법률사무소 로고" 
+                className="w-20 h-20 object-contain drop-shadow-lg"
+              />
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h1>
             <p className="text-gray-600">신뢰받는 법률 서비스</p>

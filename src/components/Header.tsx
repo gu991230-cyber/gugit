@@ -20,11 +20,12 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-lg">
-              <div className="flex items-baseline">
-                <span className="text-2xl font-bold text-white">J</span>
-                <span className="text-sm font-bold text-white ml-0.5">S</span>
-              </div>
+            <div className="flex items-center justify-center w-12 h-12">
+              <img 
+                src="/images/logo.png" 
+                alt="김정숙 법률사무소 로고" 
+                className="w-12 h-12 object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-white">

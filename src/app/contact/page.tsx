@@ -81,7 +81,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: '이메일',
-      info: 'info@lawfirm.com',
+      info: 'jungsuk75@gmail.com',
       description: '24시간 접수 가능'
     },
     {
