@@ -5,71 +5,71 @@
 import Link from 'next/link';
 
 export default function Services() {
-  // ?��? ?�이??- ?�중???�제 ?��?지?� ?�용?�로 교체 가??
+  // 실제 사례들 - 고객님들의 실제 성과들로 교체 가능
   const cases = [
     {
       id: 1,
-      title: "?�찰�??�기 ?�해 ?�복 ?��?",
-      category: "?�찰�?,
-      description: "공공기�? ?�찰 관???�기 ?�해�??�액 ?�수 ?�공",
+      title: "정찰법 위기 구해 회복 사례",
+      category: "정찰법",
+      description: "공공기관 정찰 관련 위기 구해를 위한액 회수 성공",
       image: "/images/buil.jpg",
-      result: "?�해�?100% ?�수"
+      result: "위해금 100% 회수"
     },
     {
       id: 2,
-      title: "골프 ?�원�??�불 ?�공 ?��?",
-      category: "?�원�?,
-      description: "골프???�업?�로 ?�한 ?�원�??�불 ?�송 ?�소",
+      title: "골프 회원권 환불 성공 사례",
+      category: "회원권",
+      description: "골프장 폐업으로 인한 회원권 환불 소송 승소",
       image: "/images/buil.jpg",
-      result: "?�액 ?�불 ?�공"
+      result: "전액 환불 성공"
     },
     {
       id: 3,
-      title: "가?�화???�자?�기 구제 ?��?",
-      category: "?�자?�기",
-      description: "가?�화???�자?�기�??�한 ?�해�??�수",
+      title: "가상화폐 투자사기 구제 사례",
+      category: "투자사기",
+      description: "가상화폐 투자사기로 인한 피해금 회수",
       image: "/images/buil.jpg",
-      result: "?�해�?95% ?�수"
+      result: "피해금 95% 회수"
     },
     {
       id: 4,
-      title: "보이?�피???�해 ?�복 ?��?",
-      category: "보이?�피??,
-      description: "?�화금융?�기 ?�해�??�속 ?�수",
+      title: "보이스피싱 피해 회복 사례",
+      category: "보이스피싱",
+      description: "전화금융사기 피해금 신속 회수",
       image: "/images/buil.jpg",
-      result: "?�해�?90% ?�수"
+      result: "피해금 90% 회수"
     },
     {
       id: 5,
-      title: "?��??�기 집단?�송 ?��?",
-      category: "?�자?�기",
-      description: "?�규모 ?��??�기 집단?�송 ?�소",
+      title: "펀드 사기 집단소송 사례",
+      category: "투자사기",
+      description: "대규모 펀드 사기 집단소송 승소",
       image: "/images/buil.jpg",
-      result: "집단?�송 ?�소"
+      result: "집단소송 승소"
     },
     {
       id: 6,
-      title: "콘도 ?�원�?분쟁 ?�결 ?��?",
-      category: "?�원�?,
-      description: "콘도 ?�원�?계약 분쟁 ?�만 ?�결",
+      title: "콘도 회원권 분쟁 해결 사례",
+      category: "회원권",
+      description: "콘도 회원권 계약 분쟁 원만 해결",
       image: "/images/buil.jpg",
-      result: "?�의 ?�공"
+      result: "합의 성공"
     },
     {
       id: 7,
-      title: "메신?� ?�싱 ?�기 구제 ?��?",
-      category: "보이?�피??,
-      description: "메신?��??�한 금융?�기 ?�해 ?�복",
+      title: "메신저 피싱 사기 구제 사례",
+      category: "보이스피싱",
+      description: "메신저를 통한 금융사기 피해 회복",
       image: "/images/buil.jpg",
-      result: "?�해�?85% ?�수"
+      result: "피해금 85% 회수"
     },
     {
       id: 8,
-      title: "?�찰 ?�격 배제 구제 ?��?",
-      category: "?�찰�?,
-      description: "부?�한 ?�찰 ?�격 배제 처분 취소",
+      title: "정찰 자격 배제 구제 사례",
+      category: "정찰법",
+      description: "부당한 정찰 자격 배제 처분 취소",
       image: "/images/buil.jpg",
-      result: "처분 취소 ?�공"
+      result: "처분 취소 성공"
     }
   ];
 
@@ -78,32 +78,32 @@ export default function Services() {
       {/* Hero Section */}
       <section className="bg-gray-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-6">?�공 ?��?</h1>
-          <p className="text-xl text-gray-200">15?�간 축적???�문?�으�??�루?�낸 ?�제 ?�과??/p>
+          <h1 className="text-4xl font-bold mb-6">승소 사례</h1>
+          <p className="text-xl text-gray-200">15년간 축적된 전문성으로 이루어낸 실제 성과</p>
         </div>
       </section>
 
       {/* Cases Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <p className="text-2xl font-bold text-center text-gray-800 mb-16">고객???�제 ?�?�내?�과 ?�께 ?�인?�는 ?�공 ?�토�?/p>
+          <p className="text-2xl font-bold text-center text-gray-800 mb-16">고객님들의 실제 승소내역과 함께 입증되는 성공 스토리</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {cases.map((caseItem) => (
               <div key={caseItem.id} className="bg-white rounded-lg shadow border border-gray-200">
-                {/* ?��?지 ?�역 - 카톡 ?�크린샷???�어�?�?*/}
+                {/* 이미지 영역 - 카톡 스크린샷을 넣어주세요 */}
                 <div className="aspect-[3/4] bg-gray-200 relative">
                   <img
                     src={caseItem.image}
                     alt={caseItem.title}
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      // ?��?지 로드 ?�패??placeholder ?�시
-                      e.currentTarget.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23f3f4f6"/><text x="50%" y="45%" text-anchor="middle" fill="%236b7280" font-size="16">카톡 ?�???��?지</text><text x="50%" y="55%" text-anchor="middle" fill="%236b7280" font-size="14">준�?�?/text></svg>';
+                      // 이미지 로드 실패시 placeholder 표시
+                      e.currentTarget.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23f3f4f6"/><text x="50%" y="45%" text-anchor="middle" fill="%236b7280" font-size="16">카톡 승소 이미지</text><text x="50%" y="55%" text-anchor="middle" fill="%236b7280" font-size="14">준비중</text></svg>';
                     }}
                   />
                   
-                  {/* 카테고리 뱃�? */}
+                  {/* 카테고리 뱃지 */}
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
                       {caseItem.category}
@@ -111,7 +111,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* ?�용 ?�역 */}
+                {/* 내용 영역 */}
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
                     {caseItem.title}
@@ -137,24 +137,24 @@ export default function Services() {
       {/* Stats Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">?�적 ?�과</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">누적 성과</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-orange-600 mb-2">900+</div>
-              <div className="text-lg font-medium text-gray-700">?�공 ?��?</div>
+              <div className="text-lg font-medium text-gray-700">승소 사례</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-orange-600 mb-2">91%</div>
-              <div className="text-lg font-medium text-gray-700">?�소??/div>
+              <div className="text-lg font-medium text-gray-700">승소율</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">190??/div>
-              <div className="text-lg font-medium text-gray-700">?�해�??�수??/div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">190억</div>
+              <div className="text-lg font-medium text-gray-700">피해금 회수액</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-orange-600 mb-2">4개월</div>
-              <div className="text-lg font-medium text-gray-700">?�균 ?�결기간</div>
+              <div className="text-lg font-medium text-gray-700">평균 해결기간</div>
             </div>
           </div>
         </div>
@@ -163,13 +163,13 @@ export default function Services() {
       {/* CTA Section */}
       <section className="py-20 bg-slate-700 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">비슷???�해�??�하?�나??</h2>
+          <h2 className="text-3xl font-bold mb-6">비슷한 피해를 당하셨나요?</h2>
           <p className="text-lg mb-8">
-            ?��? 같�? ?�공 ?��??�처?? 귀?�의 ?�해??반드???�복?????�습?�다.<br />
-            지�?바로 무료 ?�담???�청?�여 ?�문가???��???받아보세??
+            위와 같은 성공 사례처럼 귀하의 피해도 반드시 회복될 수 있습니다.<br />
+            지금 바로 무료 상담을 신청하여 전문가의 도움을 받아보세요.
           </p>
           <Link href="/contact" className="bg-white text-slate-700 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors block text-center">
-            무료 ?�담 ?�청?�기
+            무료 상담 신청하기
           </Link>
         </div>
       </section>
