@@ -240,7 +240,7 @@ export default function About() {
                   <h4 className="text-lg font-bold text-gray-900 mb-2">전문 분야</h4>
                   <ul className="space-y-1 text-sm text-gray-600">
                     <li>• 회원권 분야</li>
-                    <li>• 민사소송</li>
+                    <li>• 투자사기</li>
                     <li>• 계약 분쟁</li>
                   </ul>
                 </div>
