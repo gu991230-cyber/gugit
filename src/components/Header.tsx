@@ -22,7 +22,7 @@ const Header = () => {
           <Link href="/" className="flex items-center space-x-3">
             <div className="flex items-center justify-center w-12 h-12">
               <img 
-                src="/images/logo.png" 
+                src="/images/logo.PNG" 
                 alt="김정숙 법률사무소 로고" 
                 className="w-12 h-12 object-contain"
               />

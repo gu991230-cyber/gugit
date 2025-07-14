@@ -57,7 +57,7 @@ export default function Home() {
           <div className="mb-8">
             <div className="inline-flex items-center justify-center w-20 h-20 mb-4">
               <img 
-                src="/images/logo.png" 
+                src="/images/logo.PNG" 
                 alt="김정숙 법률사무소 로고" 
                 className="w-20 h-20 object-contain drop-shadow-lg"
               />
