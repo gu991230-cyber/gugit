@@ -9,12 +9,15 @@ export default function Home() {
     const formData = new FormData(e.currentTarget);
     
     try {
-      await addDoc(collection(db, 'contacts'), {
+      await addDoc(collection(db, 'consultations'), {
         name: formData.get('name'),
         phone: formData.get('phone'),
-        inquiry: formData.get('inquiry'),
+        email: formData.get('email') || '',
+        service: '일반 상담',
+        message: formData.get('inquiry'),
         privacy: formData.get('privacy'),
-        timestamp: new Date()
+        createdAt: new Date(),
+        submittedAt: new Date().toISOString()
       });
       
       alert('상담 신청이 접수되었습니다. 24시간 내에 연락드리겠습니다.');
@@ -122,6 +125,19 @@ export default function Home() {
                   placeholder="휴대폰번호를 입력해주세요"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                   required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  이메일
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="이메일을 입력해주세요 (선택사항)"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                 />
               </div>
 

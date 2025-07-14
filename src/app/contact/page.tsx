@@ -43,7 +43,7 @@ export default function Contact() {
       console.log('저장할 데이터:', dataToSave);
       
       // Firestore에 문의 데이터 저장
-      const docRef = await addDoc(collection(db, 'consultations'), dataToSave);
+              const docRef = await addDoc(collection(db, 'consultations'), dataToSave);
       
       console.log('문서가 저장되었습니다. ID:', docRef.id);
       setSubmitStatus('success');
