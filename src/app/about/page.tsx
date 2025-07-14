@@ -229,9 +229,9 @@ export default function About() {
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-2">학력 및 경력</h4>
                   <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• 건국대학교 법학과</li>
                     <li>• 건국대학교 로스쿨</li>
                     <li>• 사법연수원 43기</li>
-                    <li>• 전 검찰청 특수부</li>
                     <li>• 전 법무법인 태신</li>
                   </ul>
                 </div>
@@ -274,9 +274,9 @@ export default function About() {
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-2">학력 및 경력</h4>
                   <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• 성균관대학교 법학과</li>
                     <li>• 고려대학교 로스쿨</li>
                     <li>• 사법연수원 40기</li>
-                    <li>• 전 법무법인 김앤장</li>
                     <li>• 전 법무법인 태신</li>
                   </ul>
                 </div>
