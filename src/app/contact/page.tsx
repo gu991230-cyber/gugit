@@ -279,12 +279,24 @@ export default function Contact() {
 
             {/* Map and Additional Info */}
             <div className="space-y-8">
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
-                  <p className="text-gray-600">지도가 여기에 표시됩니다</p>
-                  <p className="text-sm text-gray-500">서울특별시 강남구 테헤란로 317 동훈빌딩 503호</p>
+              {/* Google Maps */}
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5441!2d127.0394!3d37.5013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15b06f1e5b1%3A0x87c8b0b26e1ea2a5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMzE3!5e0!3m2!1sko!2skr!4v1641234567890!5m2!1sko!2skr"
+                  width="100%"
+                  height="320"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="김정숙 법률사무소 위치"
+                />
+                <div className="bg-white p-4 border-t">
+                  <div className="flex items-center text-gray-700">
+                    <MapPin className="h-5 w-5 text-blue-600 mr-2" />
+                    <span className="font-medium">서울특별시 강남구 테헤란로 317 동훈빌딩 503호</span>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-1 ml-7">지하철 2호선 선릉역 5번 출구 도보 3분</p>
                 </div>
               </div>
 
