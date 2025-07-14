@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+
+# Firebase
+firebase-debug.log
 /.pnp
 .pnp.*
 .yarn/*
