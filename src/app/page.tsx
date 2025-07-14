@@ -8,6 +8,9 @@ export default function Home() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     
+    console.log('폼 제출 시작...');
+    console.log('Firebase db 객체:', db);
+    
     try {
       await addDoc(collection(db, 'consultations'), {
         name: formData.get('name'),
@@ -23,8 +26,16 @@ export default function Home() {
       alert('상담 신청이 접수되었습니다. 24시간 내에 연락드리겠습니다.');
       (e.target as HTMLFormElement).reset();
     } catch (error) {
-      console.error('Error:', error);
-      alert('오류가 발생했습니다. 다시 시도해주세요.');
+      console.error('Firebase 저장 오류:', error);
+      console.error('오류 상세:', JSON.stringify(error, null, 2));
+      
+      // 더 자세한 에러 메시지 제공
+      let errorMessage = '오류가 발생했습니다.';
+      if (error instanceof Error) {
+        errorMessage = `오류: ${error.message}`;
+      }
+      
+      alert(`상담 신청 중 오류가 발생했습니다.\n${errorMessage}\n\n개발자 도구(F12) Console을 확인해주세요.`);
     }
   };
 

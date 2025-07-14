@@ -26,4 +26,9 @@ export const storage = getStorage(app);
 // Initialize Analytics (only in browser environment)
 export const analytics = typeof window !== 'undefined' ? getAnalytics(app) : null;
 
+// Firebase 연결 테스트
+console.log('Firebase 초기화 완료');
+console.log('프로젝트 ID:', firebaseConfig.projectId);
+console.log('Firestore 객체:', db);
+
 export default app; 
