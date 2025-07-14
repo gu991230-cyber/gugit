@@ -231,7 +231,7 @@ export default function About() {
                   <ul className="space-y-1 text-sm text-gray-600">
                     <li>• 서울대학교 법학과</li>
                     <li>• 하버드 로스쿨 LL.M</li>
-                    <li>• 사법연수원 41기</li>
+                    <li>• 사법연수원 43기</li>
                     <li>• 전 검찰청 특수부</li>
                   </ul>
                 </div>
@@ -276,7 +276,7 @@ export default function About() {
                   <ul className="space-y-1 text-sm text-gray-600">
                     <li>• 연세대학교 법학과</li>
                     <li>• 영국 옥스퍼드 대학원</li>
-                    <li>• 사법연수원 43기</li>
+                    <li>• 사법연수원 40기</li>
                     <li>• 전 법무법인 김앤장</li>
                   </ul>
                 </div>
