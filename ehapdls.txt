@@ -1,0 +1,6 @@
+Firebase 보안 규칙 설정 (읽기/쓰기 권한 관리)
+실제 폼 제출 및 어드민 조회 테스트
+
+
+
+https://www.jslawfirmkor.com/

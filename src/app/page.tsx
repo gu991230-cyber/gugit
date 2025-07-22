@@ -97,19 +97,34 @@ export default function Home() {
           </div>
 
           {/* CTA Button */}
-          <a 
-            href="#contact-form" 
-            className="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors"
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contact-form');
+              if (element) {
+                element.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+                // 스크롤 완료 후 이름 입력란에 포커스
+                setTimeout(() => {
+                  const nameInput = document.getElementById('name');
+                  if (nameInput) {
+                    nameInput.focus();
+                  }
+                }, 500);
+              }
+            }}
+            className="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors cursor-pointer"
           >
             무료 상담 신청하기
-          </a>
+          </button>
         </div>
       </section>
 
       {/* Contact Form Section */}
       <section id="contact-form" className="bg-white py-20">
         <div className="max-w-2xl mx-auto px-4">
-          <div className="bg-gray-50 rounded-xl p-8">
+          <div className="bg-gray-50 rounded-xl p-8 border-2 border-transparent hover:border-orange-200 transition-all duration-300 shadow-lg">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">무료 상담 신청하기</h2>
               <p className="text-lg text-gray-600">전문 변호사가 직접 상담해드립니다</p>

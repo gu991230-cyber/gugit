@@ -13,3 +13,19 @@
 [context.deploy-preview]
   publish = "out"
   command = "npm run build"
+
+# 리다이렉트 설정 (네이버 블로그 카드 방지용)
+[[redirects]]
+  from = "/blog"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/naver"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/banner"
+  to = "/"
+  status = 301
