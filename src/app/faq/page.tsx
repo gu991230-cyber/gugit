@@ -276,7 +276,7 @@ export default function FAQ() {
               <div className="text-lg font-medium text-gray-700">긴급 대응</div>
             </div>
             <div className="bg-red-50 rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">15년</div>
+                              <div className="text-4xl font-bold text-red-600 mb-2">12년</div>
               <div className="text-lg font-medium text-gray-700">사기 전문 경력</div>
             </div>
           </div>

@@ -177,7 +177,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">김정숙</h3>
                 <p className="text-orange-500 font-medium">대표변호사</p>
-                <p className="text-sm text-gray-600 mt-1">15년 경력</p>
+                <p className="text-sm text-gray-600 mt-1">12년 경력</p>
               </div>
               
               <div className="space-y-4 text-center">
@@ -337,7 +337,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">지금 바로 전문가와 상담하세요</h2>
           <p className="text-lg mb-8">
-            15년 전문 경력의 김정숙 변호사가 직접 상담해드립니다.<br />
+            12년 전문 경력의 김정숙 변호사가 직접 상담해드립니다.<br />
             첫 상담은 무료이며, 24시간 내에 답변드립니다.
           </p>
           <Link href="/contact" className="bg-white text-slate-700 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors block text-center">

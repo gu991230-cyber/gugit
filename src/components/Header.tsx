@@ -47,7 +47,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-orange-500 font-medium transition-colors py-2 px-1"
+                className="text-gray-300 hover:text-orange-500 font-semibold transition-colors py-2 px-1"
               >
                 {item.name}
               </Link>
@@ -58,7 +58,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="bg-orange-500 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-orange-600 transition-colors"
+              className="bg-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
             >
               무료 상담
             </Link>
@@ -81,7 +81,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-3 text-gray-300 hover:text-orange-500 hover:bg-gray-600 font-medium rounded-lg transition-colors"
+                  className="block px-3 py-3 text-gray-300 hover:text-orange-500 hover:bg-gray-600 font-semibold rounded-lg transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -89,7 +89,7 @@ const Header = () => {
               ))}
               <Link
                 href="/contact"
-                className="block w-full mt-4 bg-orange-500 text-white px-3 py-3 rounded-lg font-medium text-center hover:bg-orange-600 transition-colors"
+                className="block w-full mt-4 bg-orange-500 text-white px-3 py-3 rounded-lg font-semibold text-center hover:bg-orange-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 무료 상담

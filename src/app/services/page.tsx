@@ -9,11 +9,11 @@ export default function Services() {
   const cases = [
     {
       id: 1,
-      title: "정찰법 위기 구해 회복 사례",
-      category: "정찰법",
-      description: "공공기관 정찰 관련 위기 구해를 위한액 회수 성공",
+      title: "로맨스스캠 피해 회복 사례",
+      category: "로맨스스캠",
+      description: "온라인 로맨스스캠 피해금 회수",
       image: "/images/3.jpg",
-      result: "위해금 100% 회수"
+      result: "피해금 90% 회수"
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ export default function Services() {
       <section className="bg-gray-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-6">승소 사례</h1>
-          <p className="text-xl text-gray-200">15년간 축적된 전문성으로 이루어낸 실제 성과</p>
+          <p className="text-xl text-gray-200">12년간 축적된 전문성으로 이루어낸 실제 성과</p>
         </div>
       </section>
 

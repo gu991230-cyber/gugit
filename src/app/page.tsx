@@ -77,7 +77,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-orange-500 font-bold mb-2">입찰권·회원권·투자사기·폰지사기·전화사기 분야의</p>
             <p className="text-xl text-gray-900 mb-4">완벽한 피해 회복으로 고객의 신뢰를 이끌어가겠습니다.</p>
-            <p className="text-lg text-gray-600">15년의 경험으로 축적된 전문성과 신뢰성</p>
+            <p className="text-lg text-gray-600">12년의 경험으로 축적된 전문성과 신뢰성</p>
           </div>
 
           {/* Stats */}

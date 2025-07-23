@@ -85,7 +85,7 @@ const AdBanner: React.FC<AdBannerProps> = ({
 
         {/* Contact Info */}
         <div className="mt-6 text-gray-300 text-sm">
-          <p>김정숙 법률사무소 | 15년 경험 | 91% 승소율</p>
+          <p>김정숙 법률사무소 | 12년 경험 | 91% 승소율</p>
           <p>전문 분야: 투자사기·폰지사기·전화사기·입찰권·회원권</p>
         </div>
               </div>
