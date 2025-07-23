@@ -5,14 +5,14 @@
 import Link from 'next/link';
 
 export default function Services() {
-  // 실제 사례들 - 고객님들의 실제 성과들로 교체 가능
+  // 실제 사례들 - 6장의 이미지 카드 (3, 4, 5, 6, 7, 8번 이미지 사용)
   const cases = [
     {
       id: 1,
       title: "정찰법 위기 구해 회복 사례",
       category: "정찰법",
       description: "공공기관 정찰 관련 위기 구해를 위한액 회수 성공",
-      image: "/images/buil.jpg",
+      image: "/images/3.jpg",
       result: "위해금 100% 회수"
     },
     {
@@ -20,7 +20,7 @@ export default function Services() {
       title: "골프 회원권 환불 성공 사례",
       category: "회원권",
       description: "골프장 폐업으로 인한 회원권 환불 소송 승소",
-      image: "/images/buil.jpg",
+      image: "/images/4.jpg",
       result: "전액 환불 성공"
     },
     {
@@ -28,7 +28,7 @@ export default function Services() {
       title: "가상화폐 투자사기 구제 사례",
       category: "투자사기",
       description: "가상화폐 투자사기로 인한 피해금 회수",
-      image: "/images/buil.jpg",
+      image: "/images/5.jpg",
       result: "피해금 95% 회수"
     },
     {
@@ -36,7 +36,7 @@ export default function Services() {
       title: "보이스피싱 피해 회복 사례",
       category: "보이스피싱",
       description: "전화금융사기 피해금 신속 회수",
-      image: "/images/buil.jpg",
+      image: "/images/6.jpg",
       result: "피해금 90% 회수"
     },
     {
@@ -44,32 +44,16 @@ export default function Services() {
       title: "펀드 사기 집단소송 사례",
       category: "투자사기",
       description: "대규모 펀드 사기 집단소송 승소",
-      image: "/images/buil.jpg",
+      image: "/images/7.jpg",
       result: "집단소송 승소"
     },
     {
       id: 6,
-      title: "콘도 회원권 분쟁 해결 사례",
-      category: "회원권",
-      description: "콘도 회원권 계약 분쟁 원만 해결",
-      image: "/images/buil.jpg",
-      result: "합의 성공"
-    },
-    {
-      id: 7,
-      title: "메신저 피싱 사기 구제 사례",
-      category: "보이스피싱",
-      description: "메신저를 통한 금융사기 피해 회복",
-      image: "/images/buil.jpg",
+      title: "쇼핑몰 사기 피해 회복 사례",
+      category: "쇼핑몰사기",
+      description: "온라인 쇼핑몰 사기 피해금 회수",
+      image: "/images/8.jpg",
       result: "피해금 85% 회수"
-    },
-    {
-      id: 8,
-      title: "정찰 자격 배제 구제 사례",
-      category: "정찰법",
-      description: "부당한 정찰 자격 배제 처분 취소",
-      image: "/images/buil.jpg",
-      result: "처분 취소 성공"
     }
   ];
 
@@ -88,7 +72,13 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-2xl font-bold text-center text-gray-800 mb-16">고객님들의 실제 승소내역과 함께 입증되는 성공 스토리</p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* 2행 3열 배치 - 완전히 새로운 방식 */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '2rem',
+            width: '100%'
+          }}>
             {cases.map((caseItem) => (
               <div key={caseItem.id} className="bg-white rounded-lg shadow border border-gray-200">
                 {/* 이미지 영역 - 카톡 스크린샷을 넣어주세요 */}
