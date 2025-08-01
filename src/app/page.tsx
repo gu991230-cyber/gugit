@@ -241,27 +241,30 @@ export default function Home() {
                </svg>
              </button>
 
-             {/* Logo */}
-             <div className="text-center mb-6">
-               <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
-                 <img 
-                   src="/images/lg.PNG" 
-                   alt="김정숙 법률사무소 로고" 
-                   className="w-16 h-16 object-contain rounded-lg"
-                   style={{
-                     background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%)',
-                     padding: '2px'
-                   }}
-                 />
-               </div>
-               <h2 className="text-2xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h2>
-             </div>
+                           {/* Logo */}
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
+                  <img 
+                    src="/images/lg.PNG" 
+                    alt="김정숙 법률사무소 로고" 
+                    className="w-16 h-16 object-contain rounded-lg"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%)',
+                      padding: '2px'
+                    }}
+                  />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h2>
+              </div>
 
-                           {/* Notice Content */}
+              {/* Notice Content */}
               <div className="text-center space-y-4">
                 <p className="text-gray-700 leading-relaxed">
+                  많은 분들이 신청 주셔서 정말 감사드립니다.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
                   현재 <span className="text-orange-500 font-bold">126분 상담 대기중</span>으로 
-                  순차적으로 연락 드리고 있으니, 조금만 기다려주시기 바랍니다. 감사합니다.
+                  순차적으로 연락 드리고 있습니다. 평균 4일 이내로 연락드리고 있으니 조금만 기다려주시기 바랍니다.
                 </p>
               </div>
 
