@@ -257,16 +257,13 @@ export default function Home() {
                <h2 className="text-2xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h2>
              </div>
 
-             {/* Notice Content */}
-             <div className="text-center space-y-4">
-               <p className="text-gray-700 leading-relaxed">
-                 많은 분들이 신청 주신 부분에 정말 감사드린다.
-               </p>
-               <p className="text-gray-700 leading-relaxed">
-                 현재 <span className="text-orange-500 font-bold">126분 상담 대기중</span>으로 
-                 순차적으로 연락 드리고 있다 조금만 기달려달라.
-               </p>
-             </div>
+                           {/* Notice Content */}
+              <div className="text-center space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  현재 <span className="text-orange-500 font-bold">126분 상담 대기중</span>으로 
+                  순차적으로 연락 드리고 있으니, 조금만 기다려주시기 바랍니다. 감사합니다.
+                </p>
+              </div>
 
              {/* Confirm Button */}
              <div className="mt-8">
