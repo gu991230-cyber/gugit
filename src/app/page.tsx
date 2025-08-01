@@ -6,8 +6,15 @@ import { collection, addDoc } from 'firebase/firestore';
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
+  const [dontShowAgain, setDontShowAgain] = useState(false);
 
   useEffect(() => {
+    // 로컬 스토리지에서 "다시 열지 않기" 설정 확인
+    const dontShow = localStorage.getItem('dontShowPopup');
+    if (dontShow === 'true') {
+      return; // 이미 "다시 열지 않기"로 설정되어 있으면 팝업 표시 안함
+    }
+
     // 페이지 로드 후 3초 뒤에 팝업 표시
     console.log('팝업 타이머 시작...');
     const timer = setTimeout(() => {
@@ -17,6 +24,13 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleClosePopup = () => {
+    if (dontShowAgain) {
+      localStorage.setItem('dontShowPopup', 'true');
+    }
+    setShowPopup(false);
+  };
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -268,15 +282,29 @@ export default function Home() {
                 </p>
               </div>
 
-             {/* Confirm Button */}
-             <div className="mt-8">
-               <button
-                 onClick={() => setShowPopup(false)}
-                 className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
-               >
-                 확인
-               </button>
-             </div>
+                           {/* Don't Show Again Checkbox */}
+              <div className="mt-6 flex items-center justify-center space-x-2">
+                <input
+                  type="checkbox"
+                  id="dontShowAgain"
+                  checked={dontShowAgain}
+                  onChange={(e) => setDontShowAgain(e.target.checked)}
+                  className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"
+                />
+                <label htmlFor="dontShowAgain" className="text-sm text-gray-600">
+                  다시 열지 않기
+                </label>
+              </div>
+
+              {/* Confirm Button */}
+              <div className="mt-6">
+                <button
+                  onClick={handleClosePopup}
+                  className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+                >
+                  확인
+                </button>
+              </div>
            </div>
          </div>
        )}
