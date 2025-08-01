@@ -1,9 +1,22 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { db } from '@/lib/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 
 export default function Home() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // 페이지 로드 후 3초 뒤에 팝업 표시
+    console.log('팝업 타이머 시작...');
+    const timer = setTimeout(() => {
+      console.log('팝업 표시!');
+      setShowPopup(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -212,8 +225,62 @@ export default function Home() {
             </form>
           </div>
         </div>
-      </section>
-    </div>
-  );
-}
+             </section>
+
+       {/* Notice Popup */}
+       {showPopup && (
+         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+           <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative">
+             {/* Close Button */}
+             <button
+               onClick={() => setShowPopup(false)}
+               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+             >
+               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+               </svg>
+             </button>
+
+             {/* Logo */}
+             <div className="text-center mb-6">
+               <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
+                 <img 
+                   src="/images/lg.PNG" 
+                   alt="김정숙 법률사무소 로고" 
+                   className="w-16 h-16 object-contain rounded-lg"
+                   style={{
+                     background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%)',
+                     padding: '2px'
+                   }}
+                 />
+               </div>
+               <h2 className="text-2xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h2>
+             </div>
+
+             {/* Notice Content */}
+             <div className="text-center space-y-4">
+               <p className="text-gray-700 leading-relaxed">
+                 많은 분들이 신청 주신 부분에 정말 감사드린다.
+               </p>
+               <p className="text-gray-700 leading-relaxed">
+                 현재 <span className="text-orange-500 font-bold">126분 상담 대기중</span>으로 
+                 순차적으로 연락 드리고 있다 조금만 기달려달라.
+               </p>
+             </div>
+
+             {/* Confirm Button */}
+             <div className="mt-8">
+               <button
+                 onClick={() => setShowPopup(false)}
+                 className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+               >
+                 확인
+               </button>
+             </div>
+           </div>
+         </div>
+       )}
+     </div>
+   );
+ }
 
