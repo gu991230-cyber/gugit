@@ -43,7 +43,7 @@ export default function Home() {
         name: formData.get('name'),
         phone: formData.get('phone'),
         email: formData.get('email') || '',
-        service: '일반 상담',
+        service: formData.get('service'),
         message: formData.get('inquiry'),
         privacy: formData.get('privacy'),
         createdAt: new Date(),
@@ -186,23 +186,43 @@ export default function Home() {
                 />
               </div>
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  이메일
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="이메일을 입력해주세요 (선택사항)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                />
-              </div>
+                             <div>
+                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                   이메일
+                 </label>
+                 <input
+                   type="email"
+                   id="email"
+                   name="email"
+                   placeholder="이메일을 입력해주세요 (선택사항)"
+                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                 />
+               </div>
 
-              <div>
-                <label htmlFor="inquiry" className="block text-sm font-medium text-gray-700 mb-2">
-                  의뢰내용 *
-                </label>
+               <div>
+                 <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                   상담 분야 *
+                 </label>
+                 <select
+                   id="service"
+                   name="service"
+                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                   required
+                 >
+                   <option value="">상담 분야를 선택해주세요</option>
+                   <option value="민사소송">민사소송</option>
+                   <option value="입찰권 분쟁">입찰권 분쟁</option>
+                   <option value="투자사기">투자사기</option>
+                   <option value="보이스피싱">보이스피싱</option>
+                   <option value="로맨스스캠">로맨스스캠</option>
+                   <option value="기타">기타</option>
+                 </select>
+               </div>
+
+               <div>
+                 <label htmlFor="inquiry" className="block text-sm font-medium text-gray-700 mb-2">
+                   의뢰내용 *
+                 </label>
                 <textarea
                   id="inquiry"
                   name="inquiry"
