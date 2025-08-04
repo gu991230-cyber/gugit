@@ -40,16 +40,32 @@ export default function AdminPage() {
   // 비밀번호 확인 (실제 서비스에서는 더 안전한 방법 사용)
   const ADMIN_PASSWORD = 'cldcodchd6'; // 실제로는 환경변수나 더 안전한 방법 사용
 
+  // 컴포넌트 마운트 시 로그인 상태 확인
+  useEffect(() => {
+    const savedAuth = localStorage.getItem('adminAuthenticated');
+    if (savedAuth === 'true') {
+      setIsAuthenticated(true);
+      fetchConsultations();
+      fetchVisitors();
+    }
+  }, []);
+
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === ADMIN_PASSWORD) {
       setIsAuthenticated(true);
+      localStorage.setItem('adminAuthenticated', 'true');
       setLoginError('');
       fetchConsultations();
       fetchVisitors();
     } else {
       setLoginError('비밀번호가 올바르지 않습니다.');
     }
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('adminAuthenticated');
   };
 
   const fetchConsultations = async () => {
@@ -254,7 +270,7 @@ export default function AdminPage() {
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">관리자 대시보드</h1>
             <button
-              onClick={() => setIsAuthenticated(false)}
+              onClick={handleLogout}
               className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
             >
               로그아웃
