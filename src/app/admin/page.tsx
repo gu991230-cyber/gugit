@@ -27,7 +27,7 @@ export default function AdminPage() {
   const [selectedConsultation, setSelectedConsultation] = useState<ConsultationData | null>(null);
 
   // 비밀번호 확인 (실제 서비스에서는 더 안전한 방법 사용)
-  const ADMIN_PASSWORD = '칭챙총6'; // 실제로는 환경변수나 더 안전한 방법 사용
+  const ADMIN_PASSWORD = 'cldcodchd6'; // 실제로는 환경변수나 더 안전한 방법 사용
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
