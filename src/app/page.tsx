@@ -2,13 +2,47 @@
 
 import { useState, useEffect } from 'react';
 import { db } from '@/lib/firebase';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, getDocs, query, where, orderBy } from 'firebase/firestore';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
   const [dontShowAgain, setDontShowAgain] = useState(false);
 
   useEffect(() => {
+    // 방문자 추적 함수
+    const trackVisitor = async () => {
+      try {
+        // IP 주소 가져오기 (실제 IP는 서버에서만 가능하므로 클라이언트에서는 근사치)
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        const ip = data.ip;
+        
+        // User Agent 정보
+        const userAgent = navigator.userAgent;
+        
+        // 방문 시간
+        const visitTime = new Date();
+        
+        // Firebase에 방문 기록 저장
+        await addDoc(collection(db, 'visitors'), {
+          ip: ip,
+          userAgent: userAgent,
+          visitTime: visitTime,
+          page: 'home',
+          timestamp: new Date()
+        });
+        
+        console.log('방문자 추적 완료:', ip);
+      } catch (error) {
+        console.error('방문자 추적 오류:', error);
+      }
+    };
+
+    // 페이지 로드 시 방문자 추적
+    trackVisitor();
+
     // 로컬 스토리지에서 "다시 열지 않기" 설정 확인
     const dontShow = localStorage.getItem('dontShowPopup');
     if (dontShow === 'true') {
