@@ -144,7 +144,7 @@ export default function Home() {
           {/* Stats */}
           <div className="flex justify-center gap-6 mb-8">
             <div className="bg-white rounded-lg border border-gray-200 shadow p-6 text-center">
-              <div className="text-2xl font-bold text-orange-500 mb-1">15</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">12</div>
               <div className="text-sm font-medium text-gray-600">년의 경험</div>
             </div>
             <div className="bg-white rounded-lg border border-gray-200 shadow p-6 text-center">

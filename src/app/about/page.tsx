@@ -82,7 +82,7 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-orange-500 text-white rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold mb-2">15</div>
+              <div className="text-4xl font-bold mb-2">12</div>
               <div className="text-lg font-medium">년 전문 경력</div>
             </div>
             <div className="bg-orange-500 text-white rounded-lg p-6 text-center">

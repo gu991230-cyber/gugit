@@ -34,7 +34,7 @@ const Footer = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-6">
               <div className="text-center">
-                <div className="text-2xl font-bold text-orange-500 mb-1">15</div>
+                <div className="text-2xl font-bold text-orange-500 mb-1">12</div>
                 <p className="text-xs text-gray-400">년의 경험</p>
               </div>
               <div className="text-center">
