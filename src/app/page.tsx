@@ -330,10 +330,10 @@ export default function Home() {
                 <p className="text-gray-700 leading-relaxed">
                   많은 분들이 신청 주셔서 정말 감사드립니다.
                 </p>
-                                 <p className="text-gray-700 leading-relaxed">
-                   현재 <span className="text-orange-500 font-bold">118명 상담 대기중</span>으로 
-                   순차적으로 연락 드리고 있습니다. 평균 4일 이내로 연락드리고 있으니 조금만 기다려주시기 바랍니다.
-                 </p>
+                                                     <p className="text-gray-700 leading-relaxed">
+                      현재 <span className="text-orange-500 font-bold">84명 상담 대기중</span>으로
+                      순차적으로 연락 드리고 있습니다. 평균 4일 이내로 연락드리고 있으니 조금만 기다려주시기 바랍니다.
+                    </p>
               </div>
 
                            {/* Don't Show Again Checkbox */}
