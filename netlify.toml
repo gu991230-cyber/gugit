@@ -26,6 +26,12 @@
   to = "/about"
   status = 301
 
+# 보안 잠금: 모든 경로를 404로 처리 (최후 우선순위)
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
 [[redirects]]
   from = "/naver"
   to = "/"
