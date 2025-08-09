@@ -20,11 +20,6 @@
   to = "/"
   status = 301
 
-# 홈 경로 제거: 루트로 접근 시 소개 페이지로 이동
-[[redirects]]
-  from = "/"
-  to = "/about"
-  status = 301
 
 # 보안 잠금: 모든 경로를 404로 처리 (최후 우선순위)
 [[redirects]]
