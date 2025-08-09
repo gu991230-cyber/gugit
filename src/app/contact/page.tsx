@@ -75,7 +75,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: '전화번호',
-              info: '010-7782-9525',
+              info: '010-4459-9020',
       description: '평일 09:00 - 18:00'
     },
     {
@@ -309,7 +309,7 @@ export default function Contact() {
                 </p>
                 <div className="space-y-2">
                   <p className="font-medium text-red-800">
-                    24시간 긴급 연락처: 010-7782-9525
+                    24시간 긴급 연락처: 010-4459-9020
                   </p>
                   <p className="text-sm text-red-600">
                     * 긴급상황에만 사용해 주세요
