@@ -1,4 +1,30 @@
+# 법무법인 웹사이트 템플릿
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## 🚀 빠른 시작
+
+이 프로젝트는 법무법인 웹사이트 템플릿입니다. 재사용하기 전에 다음 정보들을 업데이트해주세요:
+
+### 필수 업데이트 항목
+
+1. **개인정보**
+   - `[법무법인명]` → 실제 법무법인명
+   - `[변호사명]` → 실제 변호사명
+   - `[연락처 정보]` → 실제 전화번호
+   - `[이메일 정보]` → 실제 이메일
+   - `[주소 정보]` → 실제 주소
+
+2. **Firebase 설정**
+   - `src/lib/firebase.ts` 파일의 Firebase 설정 정보
+   - `[YOUR_API_KEY]`, `[YOUR_PROJECT_ID]` 등
+
+3. **관리자 비밀번호**
+   - `src/app/admin/page.tsx`의 `[YOUR_ADMIN_PASSWORD]`
+
+4. **도메인 정보**
+   - `src/app/layout.tsx`의 `metadataBase` URL
+   - `netlify.toml`의 리다이렉트 설정
 
 ## Getting Started
 

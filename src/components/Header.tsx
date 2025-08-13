@@ -23,7 +23,7 @@ const Header = () => {
             <div className="flex items-center justify-center w-12 h-12">
               <img 
                 src="/images/lg.PNG" 
-                alt="김정숙 법률사무소 로고" 
+                alt="[법무법인명] 로고" 
                 className="w-12 h-12 object-contain rounded-lg shadow-sm"
                 style={{
                   background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%)',

@@ -119,7 +119,7 @@ export default function Home() {
             <div className="inline-flex items-center justify-center w-20 h-20 mb-4">
               <img 
                 src="/images/lg.PNG" 
-                alt="김정숙 법률사무소 로고" 
+                alt="[법무법인명] 로고" 
                 className="w-20 h-20 object-contain rounded-xl drop-shadow-lg"
                 style={{
                   background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.05) 0%, rgba(251, 146, 60, 0.05) 100%)',
@@ -127,7 +127,7 @@ export default function Home() {
                 }}
               />
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">[법무법인명]</h1>
             <p className="text-gray-600">신뢰받는 법률 서비스</p>
           </div>
 
@@ -315,7 +315,7 @@ export default function Home() {
                 <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
                   <img 
                     src="/images/lg.PNG" 
-                    alt="김정숙 법률사무소 로고" 
+                    alt="[법무법인명] 로고" 
                     className="w-16 h-16 object-contain rounded-lg"
                     style={{
                       background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%)',
@@ -323,7 +323,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">김정숙 법률사무소</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">[법무법인명]</h2>
               </div>
 
               {/* Notice Content */}

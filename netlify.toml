@@ -21,12 +21,11 @@
   status = 301
 
 
-# 전체 도메인 이동: 새 도메인으로 301 리다이렉트
+# 개발용 기본 설정
 [[redirects]]
   from = "/*"
-  to = "https://www.lslsjsjslololo1455.com/:splat"
-  status = 301
-  force = true
+  to = "/index.html"
+  status = 200
 
 [[redirects]]
   from = "/naver"

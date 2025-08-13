@@ -6,13 +6,13 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBT39szRqhoBJJWyW6xBasLl4lxAhgy6FE",
-  authDomain: "lolo5599-1ed73.firebaseapp.com",
-  projectId: "lolo5599-1ed73",
-  storageBucket: "lolo5599-1ed73.firebasestorage.app",
-  messagingSenderId: "701473195654",
-  appId: "1:701473195654:web:01f676913c9d443f2ff307",
-  measurementId: "G-L8NLPC8QN8"
+  apiKey: "[YOUR_API_KEY]",
+  authDomain: "[YOUR_PROJECT_ID].firebaseapp.com",
+  projectId: "[YOUR_PROJECT_ID]",
+  storageBucket: "[YOUR_PROJECT_ID].firebasestorage.app",
+  messagingSenderId: "[YOUR_SENDER_ID]",
+  appId: "[YOUR_APP_ID]",
+  measurementId: "[YOUR_MEASUREMENT_ID]"
 };
 
 // Initialize Firebase
