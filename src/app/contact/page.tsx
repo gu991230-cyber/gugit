@@ -75,7 +75,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: '전화번호',
-              info: '[연락처 정보]',
+               info: '010-1111-2222',
       description: '평일 09:00 - 18:00'
     },
     {

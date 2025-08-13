@@ -12,16 +12,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "[법무법인명] - 신뢰받는 법률 서비스",
+  title: "박영준 법률사무소 - 신뢰받는 법률 서비스",
   description: "12년의 경험으로 축적된 전문성과 신뢰성. 입찰권, 회원권, 투자사기, 폰지사기, 전화사기 분야에 특화된 전문 변호사와 상담하세요.",
   keywords: "법무법인, 변호사, 법률상담, 투자사기, 폰지사기, 전화사기, 입찰권, 회원권, 사기피해",
-  authors: [{ name: "[법무법인명]" }],
-  metadataBase: new URL('https://example.com'),
+  authors: [{ name: "박영준 법률사무소" }],
+  metadataBase: new URL('https://parkyjlawfirm.com'),
   openGraph: {
-    title: "[법무법인명] - 신뢰받는 법률 서비스",
+    title: "박영준 법률사무소 - 신뢰받는 법률 서비스",
     description: "12년의 경험으로 축적된 전문성과 신뢰성",
     type: "website",
-    url: 'https://example.com',
+    url: 'https://parkyjlawfirm.com',
   }
 };
 

@@ -127,7 +127,7 @@ export default function Home() {
                 }}
               />
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">[법무법인명]</h1>
+             <h1 className="text-4xl font-bold text-gray-900 mb-2">박영준 법률사무소</h1>
             <p className="text-gray-600">신뢰받는 법률 서비스</p>
           </div>
 

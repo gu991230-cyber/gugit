@@ -33,7 +33,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-white">
-                Kim Jung Suk Law Firm
+                박영준 법률사무소
               </span>
               <span className="text-xs text-gray-300">
                 신뢰받는 법률 서비스
