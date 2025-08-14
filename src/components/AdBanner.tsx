@@ -6,7 +6,7 @@ interface AdBannerProps {
 }
 
 const AdBanner: React.FC<AdBannerProps> = ({ 
-   targetUrl = "https://parkyjlawfirm.com", 
+   targetUrl = "https://parkyoungjunlawfirm.com", 
   type = 'click' 
 }) => {
   const bannerContent = (
