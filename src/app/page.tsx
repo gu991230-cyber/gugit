@@ -107,10 +107,10 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <div 
-            className="absolute inset-0 bg-cover bg-center filter blur-md"
-            style={{ backgroundImage: `url('/images/buil.jpg')` }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url('/images/11.PNG')` }}
           />
-          <div className="absolute inset-0 bg-white/50" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-8 text-center w-full">
@@ -127,18 +127,18 @@ export default function Home() {
                 }}
               />
             </div>
-             <h1 className="text-4xl font-bold text-gray-900 mb-2">박영준 법률사무소</h1>
-            <p className="text-gray-600">신뢰받는 법률 서비스</p>
+             <h1 className="text-4xl font-bold text-white mb-2">박영준 법률사무소</h1>
+            <p className="text-gray-200">신뢰받는 법률 서비스</p>
           </div>
 
           {/* Main Message */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               저희는 특화된 분야의 선택과 집중을 합니다.
             </h2>
-                         <p className="text-xl text-orange-500 font-bold mb-2">입찰권·회원권·투자사기·폰지사기·전화사기 분야의</p>
-             <p className="text-xl text-gray-900 mb-4">완벽한 피해 회복으로 고객의 신뢰를 이끌어가겠습니다.</p>
-             <p className="text-lg text-gray-600 mb-2">12년의 경험으로 축적된 전문성과 신뢰성</p>
+                         <p className="text-xl text-orange-400 font-bold mb-2">입찰권·회원권·투자사기·폰지사기·전화사기 분야의</p>
+             <p className="text-xl text-white mb-4">완벽한 피해 회복으로 고객의 신뢰를 이끌어가겠습니다.</p>
+             <p className="text-lg text-gray-200 mb-2">12년의 경험으로 축적된 전문성과 신뢰성</p>
              <p className="text-lg text-orange-500 font-bold">100% 후불제</p>
           </div>
 
