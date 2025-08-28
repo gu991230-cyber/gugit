@@ -69,7 +69,6 @@ export default function Home() {
       await addDoc(collection(db, 'consultations'), {
         name: formData.get('name'),
         phone: formData.get('phone'),
-        email: formData.get('email') || '',
         service: formData.get('service'),
         message: formData.get('inquiry'),
         privacy: formData.get('privacy'),
@@ -94,7 +93,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Main Hero Section with Contact Form */}
+      {/* Main Hero Section */}
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -107,290 +106,183 @@ export default function Home() {
         
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                         <div className="text-center text-white space-y-8">
-               {/* Main Title */}
-               <div className="space-y-4">
-                 <h1 className="text-6xl font-bold leading-tight">
-                   IM THE FIRST
-                 </h1>
-                 <p className="text-xl text-gray-200 leading-relaxed">
-                   노력에 실력을 더하여, 최초를 개척하는 법무법인 아이엠
-                 </p>
-               </div>
+            <div className="text-center text-white space-y-8">
+              {/* Main Title */}
+              <div className="space-y-4">
+                <h1 className="text-6xl font-bold leading-tight">
+                  IM THE FIRST
+                </h1>
+                <p className="text-xl text-gray-200 leading-relaxed">
+                  노력에 실력을 더하여, 최초를 개척하는 박영준 법률사무소
+                </p>
+              </div>
 
-               {/* Key Achievements */}
-               <div className="space-y-3">
-                 <p className="text-lg text-orange-400 font-semibold">
-                   국내최초 기업 상장 재승인
-                 </p>
-                 <p className="text-lg text-orange-400 font-semibold">
-                   국내 주요 형사사건 무죄
-                 </p>
-               </div>
+              {/* Key Achievements */}
+              <div className="space-y-3">
+                <p className="text-lg text-orange-400 font-semibold">
+                  국내최초 기업 상장 재승인
+                </p>
+                <p className="text-lg text-orange-400 font-semibold">
+                  국내 주요 형사사건 무죄
+                </p>
+              </div>
 
-               {/* Stats */}
-               <div className="flex justify-center gap-8 pt-8">
-                 <div className="text-center">
-                   <div className="text-3xl font-bold text-orange-400">12</div>
-                   <div className="text-sm text-gray-300">년의 경험</div>
-                 </div>
-                 <div className="text-center">
-                   <div className="text-3xl font-bold text-orange-400">900+</div>
-                   <div className="text-sm text-gray-300">성공 사례</div>
-                 </div>
-                 <div className="text-center">
-                   <div className="text-3xl font-bold text-orange-400">91%</div>
-                   <div className="text-sm text-gray-300">승소율</div>
-                 </div>
-               </div>
-
-               {/* CTA Button */}
-               <div className="pt-8">
-                 <button 
-                   onClick={() => {
-                     const element = document.getElementById('contact-form');
-                     if (element) {
-                       element.scrollIntoView({ 
-                         behavior: 'smooth',
-                         block: 'start'
-                       });
-                     }
-                   }}
-                   className="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors cursor-pointer"
-                 >
-                   무료 상담 신청하기
-                 </button>
-               </div>
-             </div>
-                <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-white mb-4">무료 상담 신청하기</h2>
-                  <p className="text-gray-200">전문 변호사가 직접 상담해드립니다</p>
+              {/* Stats */}
+              <div className="flex justify-center gap-8 pt-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400">12</div>
+                  <div className="text-sm text-gray-300">년의 경험</div>
                 </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400">900+</div>
+                  <div className="text-sm text-gray-300">성공 사례</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400">91%</div>
+                  <div className="text-sm text-gray-300">승소율</div>
+                </div>
+              </div>
 
-                <form className="space-y-6" onSubmit={handleSubmit}>
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
-                      이름 *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="성함을 입력해주세요"
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
-                      전화번호 *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="휴대폰번호를 입력해주세요"
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
-                      이메일
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="이메일을 입력해주세요 (선택사항)"
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-white mb-2">
-                      상담 분야 *
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white"
-                      required
-                    >
-                      <option value="" className="text-gray-800">상담 분야를 선택해주세요</option>
-                      <option value="민사소송" className="text-gray-800">민사소송</option>
-                      <option value="입찰권 분쟁" className="text-gray-800">입찰권 분쟁</option>
-                      <option value="투자사기" className="text-gray-800">투자사기</option>
-                      <option value="보이스피싱" className="text-gray-800">보이스피싱</option>
-                      <option value="로맨스스캠" className="text-gray-800">로맨스스캠</option>
-                      <option value="기타" className="text-gray-800">기타</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="inquiry" className="block text-sm font-medium text-white mb-2">
-                      의뢰내용 *
-                    </label>
-                    <textarea
-                      id="inquiry"
-                      name="inquiry"
-                      rows={4}
-                      placeholder="대략적인 의뢰내용을 적어주세요"
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                      required
-                    />
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <input
-                      type="checkbox"
-                      id="privacy"
-                      name="privacy"
-                      className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500 border-white/30 rounded bg-white/20"
-                      required
-                    />
-                    <label htmlFor="privacy" className="text-sm text-gray-200">
-                      개인정보 수집 및 이용에 동의합니다. *
-                    </label>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors"
-                  >
-                    무료 상담 신청하기
-                  </button>
-
-                  <div className="text-center">
-                    <p className="text-sm text-gray-300">상담 신청 후 24시간 내에 연락드립니다</p>
-                  </div>
-                </form>
+              {/* CTA Button */}
+              <div className="pt-8">
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('contact-form');
+                    if (element) {
+                      element.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }
+                  }}
+                  className="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors cursor-pointer"
+                >
+                  무료 상담 신청하기
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-                 {/* Page Indicators */}
-         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-           <div className="w-2 h-2 bg-white rounded-full"></div>
-           <div className="w-2 h-2 bg-white/50 rounded-full"></div>
-         </div>
-       </section>
+        {/* Page Indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="w-2 h-2 bg-white rounded-full"></div>
+          <div className="w-2 h-2 bg-white/50 rounded-full"></div>
+        </div>
+      </section>
 
-       {/* Contact Form Section */}
-       <section id="contact-form" className="relative py-20 min-h-screen flex items-center">
-         {/* Background Image */}
-         <div className="absolute inset-0">
-           <div 
-             className="absolute inset-0 bg-cover bg-center"
-             style={{ backgroundImage: `url('/images/11.PNG')` }}
-           />
-           <div className="absolute inset-0 bg-black/60" />
-         </div>
-         
-         <div className="relative z-10 w-full">
-           <div className="max-w-2xl mx-auto px-4">
-             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-               <div className="text-center mb-8">
-                 <h2 className="text-3xl font-bold text-white mb-4">무료 상담 신청하기</h2>
-                 <p className="text-gray-200">전문 변호사가 직접 상담해드립니다</p>
-               </div>
+      {/* Contact Form Section */}
+      <section id="contact-form" className="relative py-20 min-h-screen flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url('/images/11.PNG')` }}
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+        
+        <div className="relative z-10 w-full">
+          <div className="max-w-2xl mx-auto px-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-white mb-4">무료 상담 신청하기</h2>
+                <p className="text-gray-200">전문 변호사가 직접 상담해드립니다</p>
+              </div>
 
-               <form className="space-y-6" onSubmit={handleSubmit}>
-                 <div>
-                   <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
-                     이름 *
-                   </label>
-                   <input
-                     type="text"
-                     id="name"
-                     name="name"
-                     placeholder="성함을 입력해주세요"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                     required
-                   />
-                 </div>
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                    이름 *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="성함을 입력해주세요"
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
+                    required
+                  />
+                </div>
 
-                 <div>
-                   <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
-                     전화번호 *
-                   </label>
-                   <input
-                     type="tel"
-                     id="phone"
-                     name="phone"
-                     placeholder="휴대폰번호를 입력해주세요"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                     required
-                   />
-                 </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
+                    전화번호 *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="휴대폰번호를 입력해주세요"
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
+                    required
+                  />
+                </div>
 
-                 <div>
-                   <label htmlFor="service" className="block text-sm font-medium text-white mb-2">
-                     상담 분야 *
-                   </label>
-                   <select
-                     id="service"
-                     name="service"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white"
-                     required
-                   >
-                     <option value="" className="text-gray-800">상담 분야를 선택해주세요</option>
-                     <option value="민사소송" className="text-gray-800">민사소송</option>
-                     <option value="입찰권 분쟁" className="text-gray-800">입찰권 분쟁</option>
-                     <option value="투자사기" className="text-gray-800">투자사기</option>
-                     <option value="보이스피싱" className="text-gray-800">보이스피싱</option>
-                     <option value="로맨스스캠" className="text-gray-800">로맨스스캠</option>
-                     <option value="기타" className="text-gray-800">기타</option>
-                   </select>
-                 </div>
+                <div>
+                  <label htmlFor="service" className="block text-sm font-medium text-white mb-2">
+                    상담 분야 *
+                  </label>
+                  <select
+                    id="service"
+                    name="service"
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white"
+                    required
+                  >
+                    <option value="" className="text-gray-800">상담 분야를 선택해주세요</option>
+                    <option value="민사소송" className="text-gray-800">민사소송</option>
+                    <option value="입찰권 분쟁" className="text-gray-800">입찰권 분쟁</option>
+                    <option value="투자사기" className="text-gray-800">투자사기</option>
+                    <option value="보이스피싱" className="text-gray-800">보이스피싱</option>
+                    <option value="로맨스스캠" className="text-gray-800">로맨스스캠</option>
+                    <option value="기타" className="text-gray-800">기타</option>
+                  </select>
+                </div>
 
-                 <div>
-                   <label htmlFor="inquiry" className="block text-sm font-medium text-white mb-2">
-                     의뢰내용 *
-                   </label>
-                   <textarea
-                     id="inquiry"
-                     name="inquiry"
-                     rows={4}
-                     placeholder="대략적인 의뢰내용을 적어주세요"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
-                     required
-                   />
-                 </div>
+                <div>
+                  <label htmlFor="inquiry" className="block text-sm font-medium text-white mb-2">
+                    의뢰내용 *
+                  </label>
+                  <textarea
+                    id="inquiry"
+                    name="inquiry"
+                    rows={4}
+                    placeholder="대략적인 의뢰내용을 적어주세요"
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
+                    required
+                  />
+                </div>
 
-                 <div className="flex items-start space-x-3">
-                   <input
-                     type="checkbox"
-                     id="privacy"
-                     name="privacy"
-                     className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500 border-white/30 rounded bg-white/20"
-                     required
-                   />
-                   <label htmlFor="privacy" className="text-sm text-gray-200">
-                     개인정보 수집 및 이용에 동의합니다. *
-                   </label>
-                 </div>
+                <div className="flex items-start space-x-3">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500 border-white/30 rounded bg-white/20"
+                    required
+                  />
+                  <label htmlFor="privacy" className="text-sm text-gray-200">
+                    개인정보 수집 및 이용에 동의합니다. *
+                  </label>
+                </div>
 
-                 <button
-                   type="submit"
-                   className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors"
-                 >
-                   무료 상담 신청하기
-                 </button>
+                <button
+                  type="submit"
+                  className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors"
+                >
+                  무료 상담 신청하기
+                </button>
 
-                 <div className="text-center">
-                   <p className="text-sm text-gray-300">상담 신청 후 24시간 내에 연락드립니다</p>
-                 </div>
-               </form>
-             </div>
-           </div>
-         </div>
-       </section>
+                <div className="text-center">
+                  <p className="text-sm text-gray-300">상담 신청 후 24시간 내에 연락드립니다</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
-       {/* Notice Popup */}
+      {/* Notice Popup */}
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative">
