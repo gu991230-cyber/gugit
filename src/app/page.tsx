@@ -287,15 +287,11 @@ export default function Home() {
               <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
                 <img 
                   src="/images/lg.PNG" 
-                  alt="[법무법인명] 로고" 
-                  className="w-16 h-16 object-contain rounded-lg"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(234, 90, 43, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%)',
-                    padding: '2px'
-                  }}
+                  alt="박영준 법률사무소 로고" 
+                  className="w-16 h-16 object-contain rounded-lg filter brightness-0 invert"
                 />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">[법무법인명]</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">박영준 법률사무소</h2>
             </div>
 
             <div className="text-center space-y-4">

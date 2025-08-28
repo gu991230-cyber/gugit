@@ -42,7 +42,7 @@ export default function RootLayout({
                 <img 
                   src="/images/lg.PNG" 
                   alt="박영준 법률사무소 로고" 
-                  className="w-8 h-8 object-contain"
+                  className="w-8 h-8 object-contain filter brightness-0 invert"
                 />
                 <span className="text-lg font-bold text-white">박영준 법률사무소</span>
               </Link>
