@@ -167,8 +167,8 @@ export default function Home() {
 
       </section>
 
-      {/* Contact Form Section */}
-      <section id="contact-form" className="relative py-20 min-h-screen flex items-center bg-gray-900">
+             {/* Contact Form Section */}
+       <section id="contact-form" className="relative py-20 min-h-screen flex items-center bg-gray-800">
         
         <div className="relative z-10 w-full">
           <div className="max-w-2xl mx-auto px-4">
