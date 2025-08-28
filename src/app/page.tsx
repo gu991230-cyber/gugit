@@ -164,23 +164,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Page Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          <div className="w-2 h-2 bg-white rounded-full"></div>
-          <div className="w-2 h-2 bg-white/50 rounded-full"></div>
-        </div>
+
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact-form" className="relative py-20 min-h-screen flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/buil.jpg')` }}
-          />
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
+      <section id="contact-form" className="relative py-20 min-h-screen flex items-center bg-gray-900">
         
         <div className="relative z-10 w-full">
           <div className="max-w-2xl mx-auto px-4">
