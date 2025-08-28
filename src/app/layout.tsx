@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -32,7 +33,52 @@ export default function RootLayout({
   return (
     <html lang="ko" className="scroll-smooth">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <main className="min-h-screen">
+        {/* Simple Navigation */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              {/* Logo */}
+              <Link href="/" className="flex items-center space-x-2">
+                <img 
+                  src="/images/lg.PNG" 
+                  alt="박영준 법률사무소 로고" 
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="text-lg font-bold text-gray-900">박영준 법률사무소</span>
+              </Link>
+              
+              {/* Navigation Links */}
+              <div className="hidden md:flex items-center space-x-8">
+                <Link href="/" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
+                  홈
+                </Link>
+                <Link href="/about" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
+                  소개
+                </Link>
+                <Link href="/services" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
+                  서비스
+                </Link>
+                <Link href="/contact" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
+                  연락처
+                </Link>
+                <Link href="/faq" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
+                  FAQ
+                </Link>
+              </div>
+              
+              {/* Mobile Menu Button */}
+              <div className="md:hidden">
+                <button className="text-gray-700 hover:text-orange-500 transition-colors">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <main className="min-h-screen pt-16">
           {children}
         </main>
         <Footer />
