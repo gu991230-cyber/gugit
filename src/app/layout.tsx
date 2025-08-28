@@ -44,31 +44,31 @@ export default function RootLayout({
                   alt="박영준 법률사무소 로고" 
                   className="w-8 h-8 object-contain"
                 />
-                <span className="text-lg font-bold text-white drop-shadow-lg">박영준 법률사무소</span>
+                <span className="text-lg font-bold text-gray-900">박영준 법률사무소</span>
               </Link>
               
               {/* Navigation Links */}
               <div className="hidden md:flex items-center space-x-8">
-                <Link href="/" className="text-white hover:text-orange-300 transition-colors font-medium drop-shadow-lg">
+                <Link href="/" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
                   홈
                 </Link>
-                <Link href="/about" className="text-white hover:text-orange-300 transition-colors font-medium drop-shadow-lg">
+                <Link href="/about" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
                   소개
                 </Link>
-                <Link href="/services" className="text-white hover:text-orange-300 transition-colors font-medium drop-shadow-lg">
+                <Link href="/services" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
                   서비스
                 </Link>
-                <Link href="/contact" className="text-white hover:text-orange-300 transition-colors font-medium drop-shadow-lg">
+                <Link href="/contact" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
                   연락처
                 </Link>
-                <Link href="/faq" className="text-white hover:text-orange-300 transition-colors font-medium drop-shadow-lg">
+                <Link href="/faq" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
                   FAQ
                 </Link>
               </div>
               
               {/* Mobile Menu Button */}
               <div className="md:hidden">
-                <button className="text-white hover:text-orange-300 transition-colors drop-shadow-lg">
+                <button className="text-gray-700 hover:text-orange-500 transition-colors">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
