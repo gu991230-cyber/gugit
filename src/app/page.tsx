@@ -97,10 +97,10 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/buil.jpg')` }}
-          />
+                     <div 
+             className="absolute inset-0 bg-cover bg-center"
+             style={{ backgroundImage: `url('/images/11.PNG')` }}
+           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         
