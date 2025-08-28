@@ -99,7 +99,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/11.PNG')` }}
+            style={{ backgroundImage: `url('/images/buil.jpg')` }}
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
@@ -177,7 +177,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/11.PNG')` }}
+            style={{ backgroundImage: `url('/images/buil.jpg')` }}
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
