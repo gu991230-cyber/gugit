@@ -40,7 +40,7 @@ export default function RootLayout({
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-2">
                 <img 
-                  src="/images/lg.PNG" 
+                  src="/images/115.PNG" 
                   alt="박영준 법률사무소 로고" 
                   className="w-8 h-8 object-contain"
                 />

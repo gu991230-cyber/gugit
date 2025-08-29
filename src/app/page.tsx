@@ -286,7 +286,7 @@ export default function Home() {
             <div className="text-center mb-6">
               <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
                 <img 
-                  src="/images/lg.PNG" 
+                  src="/images/115.PNG" 
                   alt="박영준 법률사무소 로고" 
                   className="w-16 h-16 object-contain rounded-lg"
                 />
