@@ -52,7 +52,7 @@ export default function RootLayout({
                 <Link href="/" className="text-white hover:text-orange-300 transition-colors font-medium">
                   홈
                 </Link>
-                <Link href="/about" className="text-white hover:text-orange-300 transition-colors font-medium">
+                <Link href="/#about" className="text-white hover:text-orange-300 transition-colors font-medium">
                   소개
                 </Link>
                 <Link href="/services" className="text-white hover:text-orange-300 transition-colors font-medium">
