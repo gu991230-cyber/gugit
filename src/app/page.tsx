@@ -288,7 +288,7 @@ export default function Home() {
                 <img 
                   src="/images/lg.PNG" 
                   alt="박영준 법률사무소 로고" 
-                  className="w-16 h-16 object-contain rounded-lg filter brightness-0 invert"
+                  className="w-16 h-16 object-contain rounded-lg"
                 />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">박영준 법률사무소</h2>
