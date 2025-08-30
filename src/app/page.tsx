@@ -275,44 +275,53 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">4개 전문 분야, 완벽한 해결책</h2>
-          <p className="text-lg text-center text-gray-600 mb-16">입찰권·회원권·투자사기·보이스피싱 전문 법무법인</p>
+      <section id="about" className="py-20 relative">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url('/images/551.webp')` }}
+          />
+          <div className="absolute inset-0 bg-black/70" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-white mb-4">4개 전문 분야, 완벽한 해결책</h2>
+          <p className="text-lg text-center text-gray-200 mb-16">입찰권·회원권·투자사기·보이스피싱 전문 법무법인</p>
           
           {/* 전문 분야 소개 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">입찰권 분야</h3>
               <ul className="space-y-2">
-                <li className="text-gray-600">• 공공기관 입찰 관련 분쟁 해결</li>
-                <li className="text-gray-600">• 입찰 자격 제한 및 배제 구제</li>
-                <li className="text-gray-600">• 낙찰자 선정 이의신청 대리</li>
+                <li className="text-gray-700">• 공공기관 입찰 관련 분쟁 해결</li>
+                <li className="text-gray-700">• 입찰 자격 제한 및 배제 구제</li>
+                <li className="text-gray-700">• 낙찰자 선정 이의신청 대리</li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">회원권 분야</h3>
                              <p className="font-medium mb-4" style={{ color: '#FFD700' }}>(골프장·콘도)</p>
               <ul className="space-y-2">
-                <li className="text-gray-600">• 골프 회원권 환불 소송</li>
-                <li className="text-gray-600">• 콘도 회원권 피해 구제</li>
-                <li className="text-gray-600">• 회원권 관련 계약 분쟁 해결</li>
+                <li className="text-gray-700">• 골프 회원권 환불 소송</li>
+                <li className="text-gray-700">• 콘도 회원권 피해 구제</li>
+                <li className="text-gray-700">• 회원권 관련 계약 분쟁 해결</li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">투자사기 분야</h3>
               <ul className="space-y-2">
-                <li className="text-gray-600">• 폰지사기 피해 회복</li>
-                <li className="text-gray-600">• 가상화폐 투자사기 구제</li>
-                <li className="text-gray-600">• 투자 계약 사기 손해배상</li>
+                <li className="text-gray-700">• 폰지사기 피해 회복</li>
+                <li className="text-gray-700">• 가상화폐 투자사기 구제</li>
+                <li className="text-gray-700">• 투자 계약 사기 손해배상</li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">보이스피싱 범죄</h3>
               <ul className="space-y-2">
-                <li className="text-gray-600">• 전화금융사기 피해 구제</li>
-                <li className="text-gray-600">• 메신저 피싱 사건 대응</li>
-                <li className="text-gray-600">• 사기 피해금 회수 소송</li>
+                <li className="text-gray-700">• 전화금융사기 피해 구제</li>
+                <li className="text-gray-700">• 메신저 피싱 사건 대응</li>
+                <li className="text-gray-700">• 사기 피해금 회수 소송</li>
               </ul>
             </div>
           </div>
@@ -339,9 +348,9 @@ export default function Home() {
 
           {/* 변호사 소개 */}
           <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8">전문 변호사 소개</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">전문 변호사 소개</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-              <div className="bg-white rounded-lg shadow p-6 w-full max-w-sm">
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 w-full max-w-sm">
                 <div className="text-center mb-6">
                   <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
                     <img 
