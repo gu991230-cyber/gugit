@@ -19,11 +19,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-                                            <div className="flex items-center justify-center w-12 h-12 rounded-lg">
+                                            <div className="flex items-center justify-center w-12 h-12">
                  <img 
                    src="/images/pyj.png" 
                    alt="박영준 법률사무소 로고" 
                    className="w-12 h-12 object-contain"
+                   style={{ mixBlendMode: 'multiply' }}
                  />
                </div>
               <div>

@@ -43,6 +43,7 @@ export default function RootLayout({
                    src="/images/pyj.png" 
                    alt="박영준 법률사무소 로고" 
                    className="w-8 h-8 object-contain"
+                   style={{ mixBlendMode: 'multiply' }}
                  />
                 <span className="text-lg font-bold text-white">박영준 법률사무소</span>
               </Link>
