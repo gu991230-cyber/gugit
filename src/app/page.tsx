@@ -7,9 +7,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const [showPopup, setShowPopup] = useState(false);
-  const [dontShowAgain, setDontShowAgain] = useState(false);
-
   useEffect(() => {
     // 방문자 추적 함수
     const trackVisitor = async () => {
@@ -36,27 +33,7 @@ export default function Home() {
     };
 
     trackVisitor();
-
-    const dontShow = localStorage.getItem('dontShowPopup');
-    if (dontShow === 'true') {
-      return;
-    }
-
-    console.log('팝업 타이머 시작...');
-    const timer = setTimeout(() => {
-      console.log('팝업 표시!');
-      setShowPopup(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
   }, []);
-
-  const handleClosePopup = () => {
-    if (dontShowAgain) {
-      localStorage.setItem('dontShowPopup', 'true');
-    }
-    setShowPopup(false);
-  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -364,64 +341,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Notice Popup */}
-      {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative">
-            <button
-              onClick={() => setShowPopup(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
-                                 <img 
-                   src="/images/pyj.png" 
-                   alt="박영준 법률사무소 로고" 
-                   className="w-16 h-16 object-contain rounded-lg"
-                 />
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">박영준 법률사무소</h2>
-            </div>
-
-            <div className="text-center space-y-4">
-              <p className="text-gray-700 leading-relaxed">
-                많은 분들이 신청 주셔서 정말 감사드립니다.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                                 현재 <span className="text-yellow-500 font-bold">54명 상담 대기중</span>으로
-                순차적으로 연락 드리고 있습니다. 평균 2일 이내로 연락드리고 있으니 조금만 기다려주시기 바랍니다.
-              </p>
-            </div>
-
-            <div className="mt-6 flex items-center justify-center space-x-2">
-              <input
-                type="checkbox"
-                id="dontShowAgain"
-                checked={dontShowAgain}
-                onChange={(e) => setDontShowAgain(e.target.checked)}
-                                 className="h-4 w-4 text-yellow-500 focus:ring-yellow-500 border-gray-300 rounded"
-              />
-              <label htmlFor="dontShowAgain" className="text-sm text-gray-600">
-                다시 열지 않기
-              </label>
-            </div>
-
-            <div className="mt-6">
-              <button
-                onClick={handleClosePopup}
-                                 className="w-full bg-yellow-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors"
-              >
-                확인
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }
