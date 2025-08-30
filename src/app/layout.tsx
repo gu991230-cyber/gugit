@@ -87,41 +87,69 @@ export default function RootLayout({
           {children}
         </main>
         
-        {/* Fixed Bottom Navigation */}
-        <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-200 shadow-xl">
+        {/* Fixed Bottom Consultation Bar */}
+        <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-gray-800 border-t border-gray-600 shadow-xl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-row justify-between items-center py-3 sm:py-0 sm:h-16 space-y-2 sm:space-y-0">
-              {/* Quick Contact Info */}
-              <div className="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm">
-                <div className="flex items-center space-x-1 sm:space-x-2">
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex flex-col lg:flex-row justify-between items-center py-4 lg:py-6 space-y-4 lg:space-y-0">
+              {/* Left Section - Contact Info */}
+              <div className="flex items-center space-x-6 text-white">
+                <div className="flex items-center space-x-2">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  <span className="font-medium text-gray-700">010-1111-2222</span>
+                  <span className="text-sm">1:1 빠른 상담하기</span>
                 </div>
-                <div className="hidden sm:flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-600">24시간 상담 가능</span>
+                <div className="text-xl font-bold">010-1111-2222</div>
+                <div className="hidden lg:block w-px h-6 bg-gray-600"></div>
+                <div className="hidden lg:flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
+                    <span className="text-gray-800 font-bold text-xs">N</span>
+                  </div>
+                  <span className="text-sm">네이버예약</span>
                 </div>
               </div>
               
-              {/* Quick Consultation Button */}
-              <button 
-                onClick={() => {
-                  const element = document.getElementById('contact-form');
-                  if (element) {
-                    element.scrollIntoView({ 
-                      behavior: 'smooth',
-                      block: 'start'
-                    });
-                  }
-                }}
-                className="w-full sm:w-auto bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold text-xs sm:text-sm hover:bg-blue-700 transition-colors shadow-lg"
-              >
-                1:1 빠른 상담하기
-              </button>
+              {/* Center Section - Input Fields */}
+              <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+                <input
+                  type="text"
+                  placeholder="이름"
+                  className="px-4 py-2 border border-gray-300 rounded text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <input
+                  type="tel"
+                  placeholder="연락처"
+                  className="px-4 py-2 border border-gray-300 rounded text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              
+              {/* Right Section - Agreement & Submit */}
+              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    id="privacy-agreement"
+                    className="w-4 h-4 border border-white rounded bg-transparent"
+                  />
+                  <label htmlFor="privacy-agreement" className="text-white text-sm">
+                    개인정보수집동의 <span className="underline cursor-pointer">[취급방침]</span>
+                  </label>
+                </div>
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('contact-form');
+                    if (element) {
+                      element.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }
+                  }}
+                  className="bg-gray-600 text-white px-6 py-2 rounded font-medium hover:bg-gray-700 transition-colors"
+                >
+                  상담신청
+                </button>
+              </div>
             </div>
           </div>
         </div>
