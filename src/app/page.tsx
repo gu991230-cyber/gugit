@@ -234,14 +234,14 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-20 relative">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/551.webp')` }}
-          />
-          <div className="absolute inset-0 bg-black/70" />
-        </div>
+                 {/* Background Image */}
+         <div className="absolute inset-0">
+           <div 
+             className="absolute inset-0 bg-cover bg-center"
+             style={{ backgroundImage: `url('/images/558.jpg')` }}
+           />
+           <div className="absolute inset-0 bg-black/70" />
+         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-white mb-4">4개 전문 분야, 완벽한 해결책</h2>
