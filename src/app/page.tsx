@@ -96,10 +96,10 @@ export default function Home() {
 
               {/* Key Achievements */}
               <div className="space-y-3">
-                                 <p className="text-lg text-amber-500 font-semibold">
+                                 <p className="text-lg text-orange-400 font-semibold">
                    국내최초 기업 상장 재승인
                  </p>
-                 <p className="text-lg text-amber-500 font-semibold">
+                 <p className="text-lg text-orange-400 font-semibold">
                    국내 주요 형사사건 무죄
                  </p>
               </div>
@@ -107,15 +107,15 @@ export default function Home() {
               {/* Stats */}
               <div className="flex justify-center gap-8 pt-8">
                                  <div className="text-center">
-                   <div className="text-3xl font-bold text-amber-500">12</div>
+                   <div className="text-3xl font-bold text-orange-400">12</div>
                    <div className="text-sm text-gray-300">년의 경험</div>
                  </div>
                  <div className="text-center">
-                   <div className="text-3xl font-bold text-amber-500">900+</div>
+                   <div className="text-3xl font-bold text-orange-400">900+</div>
                    <div className="text-sm text-gray-300">성공 사례</div>
                  </div>
                  <div className="text-center">
-                   <div className="text-3xl font-bold text-amber-500">91%</div>
+                   <div className="text-3xl font-bold text-orange-400">91%</div>
                    <div className="text-sm text-gray-300">승소율</div>
                  </div>
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
                       });
                     }
                   }}
-                                     className="bg-amber-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-600 transition-colors cursor-pointer"
+                                     className="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors cursor-pointer"
                 >
                   무료 상담 신청하기
                 </button>
@@ -165,7 +165,7 @@ export default function Home() {
                      id="name"
                      name="name"
                      placeholder="성함을 입력해주세요"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-white placeholder-gray-300"
+                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
                      required
                    />
                 </div>
@@ -179,7 +179,7 @@ export default function Home() {
                      id="phone"
                      name="phone"
                      placeholder="휴대폰번호를 입력해주세요"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-white placeholder-gray-300"
+                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
                      required
                    />
                 </div>
@@ -191,7 +191,7 @@ export default function Home() {
                    <select
                      id="service"
                      name="service"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-white"
+                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white"
                      required
                    >
                     <option value="" className="text-gray-800">상담 분야를 선택해주세요</option>
@@ -213,7 +213,7 @@ export default function Home() {
                      name="inquiry"
                      rows={4}
                      placeholder="대략적인 의뢰내용을 적어주세요"
-                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-white placeholder-gray-300"
+                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300"
                      required
                    />
                 </div>
@@ -223,7 +223,7 @@ export default function Home() {
                      type="checkbox"
                      id="privacy"
                      name="privacy"
-                     className="mt-1 h-4 w-4 text-amber-500 focus:ring-amber-500 border-white/30 rounded bg-white/20"
+                     className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500 border-white/30 rounded bg-white/20"
                      required
                    />
                   <label htmlFor="privacy" className="text-sm text-gray-200">
@@ -233,7 +233,7 @@ export default function Home() {
 
                                  <button
                    type="submit"
-                   className="w-full bg-amber-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-amber-600 transition-colors"
+                   className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors"
                  >
                   무료 상담 신청하기
                 </button>
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-lg shadow p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">회원권 분야</h3>
-                             <p className="text-amber-500 font-medium mb-4">(골프장·콘도)</p>
+                             <p className="text-orange-500 font-medium mb-4">(골프장·콘도)</p>
               <ul className="space-y-2">
                 <li className="text-gray-600">• 골프 회원권 환불 소송</li>
                 <li className="text-gray-600">• 콘도 회원권 피해 구제</li>
@@ -292,19 +292,19 @@ export default function Home() {
 
           {/* 성과 섹션 */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-                         <div className="bg-amber-500 text-white rounded-lg p-6 text-center">
+                         <div className="bg-orange-500 text-white rounded-lg p-6 text-center">
                <div className="text-4xl font-bold mb-2">12</div>
                <div className="text-lg font-medium">년 전문 경력</div>
              </div>
-             <div className="bg-amber-500 text-white rounded-lg p-6 text-center">
+             <div className="bg-orange-500 text-white rounded-lg p-6 text-center">
                <div className="text-4xl font-bold mb-2">900+</div>
                <div className="text-lg font-medium">건 성공 사례</div>
              </div>
-             <div className="bg-amber-500 text-white rounded-lg p-6 text-center">
+             <div className="bg-orange-500 text-white rounded-lg p-6 text-center">
                <div className="text-4xl font-bold mb-2">91%</div>
                <div className="text-lg font-medium">승소율</div>
              </div>
-             <div className="bg-amber-500 text-white rounded-lg p-6 text-center">
+             <div className="bg-orange-500 text-white rounded-lg p-6 text-center">
                <div className="text-4xl font-bold mb-2">4</div>
                <div className="text-lg font-medium">개월 평균 해결</div>
              </div>
@@ -324,7 +324,7 @@ export default function Home() {
                     />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">박영준</h4>
-                                     <p className="text-yellow-500 font-medium">대표변호사</p>
+                                     <p className="text-orange-500 font-medium">대표변호사</p>
                   <p className="text-sm text-gray-600 mt-1">12년 경력</p>
                 </div>
                 <div className="text-center">
