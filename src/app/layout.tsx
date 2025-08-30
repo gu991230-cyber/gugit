@@ -43,10 +43,11 @@ export default function RootLayout({
                     src="/images/pyj.png" 
                     alt="박영준 법률사무소 로고" 
                     className="w-8 h-8 object-contain"
-                    style={{ 
-                      filter: 'brightness(0) invert(1)',
-                      mixBlendMode: 'normal'
-                    }}
+                                         style={{ 
+                       filter: 'brightness(0) invert(1)',
+                       mixBlendMode: 'normal',
+                       backgroundColor: 'transparent'
+                     }}
                   />
                  <span className="text-lg font-bold text-white">박영준 법률사무소</span>
                </Link>
@@ -87,7 +88,7 @@ export default function RootLayout({
         </main>
         
         {/* Fixed Bottom Navigation */}
-        <div className="fixed bottom-0 left-0 right-0 z-[60] bg-white border-t border-gray-200 shadow-lg">
+        <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-200 shadow-xl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row justify-between items-center py-3 sm:py-0 sm:h-16 space-y-2 sm:space-y-0">
               {/* Quick Contact Info */}
