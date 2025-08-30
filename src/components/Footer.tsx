@@ -18,15 +18,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-                                            <div className="flex items-center justify-center w-12 h-12">
-                 <img 
-                   src="/images/pyj.png" 
-                   alt="박영준 법률사무소 로고" 
-                   className="w-12 h-12 object-contain"
-                   style={{ mixBlendMode: 'multiply' }}
-                 />
-               </div>
+                         <div className="flex items-center space-x-3 mb-6">
+                                             <div className="flex items-center justify-center w-12 h-12">
+                  <img 
+                    src="/images/pyj.png" 
+                    alt="박영준 법률사무소 로고" 
+                    className="w-12 h-12 object-contain"
+                    style={{ 
+                      filter: 'brightness(0) invert(1)',
+                      mixBlendMode: 'normal'
+                    }}
+                  />
+                </div>
               <div>
                  <span className="text-2xl font-bold text-white">
                   박영준 법률사무소

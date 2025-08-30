@@ -38,15 +38,18 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
-              <Link href="/" className="flex items-center space-x-2">
-                                 <img 
-                   src="/images/pyj.png" 
-                   alt="박영준 법률사무소 로고" 
-                   className="w-8 h-8 object-contain"
-                   style={{ mixBlendMode: 'multiply' }}
-                 />
-                <span className="text-lg font-bold text-white">박영준 법률사무소</span>
-              </Link>
+                             <Link href="/" className="flex items-center space-x-2">
+                                  <img 
+                    src="/images/pyj.png" 
+                    alt="박영준 법률사무소 로고" 
+                    className="w-8 h-8 object-contain"
+                    style={{ 
+                      filter: 'brightness(0) invert(1)',
+                      mixBlendMode: 'normal'
+                    }}
+                  />
+                 <span className="text-lg font-bold text-white">박영준 법률사무소</span>
+               </Link>
               
               {/* Navigation Links */}
               <div className="hidden md:flex items-center space-x-8">
