@@ -1,18 +1,11 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
-# Force static site deployment
-[context.production]
-  publish = "out"
-  command = "npm run build"
-
-[context.deploy-preview]
-  publish = "out"
-  command = "npm run build"
+# Next.js 표준 배포 설정: 추가 컨텍스트 강제 설정 제거
 
 # 리다이렉트 설정 (네이버 블로그 카드 방지용)
 [[redirects]]
@@ -20,12 +13,7 @@
   to = "/"
   status = 301
 
-
-# 개발용 기본 설정
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# 불필요한 SPA 강제 리다이렉트 제거 (Next.js 라우팅 방해)
 
 [[redirects]]
   from = "/naver"
