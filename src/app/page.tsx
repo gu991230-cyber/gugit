@@ -70,14 +70,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Main Hero Section */}
+      {/* 1. Main Hero Section */}
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
-                     <div 
-             className="absolute inset-0 bg-cover bg-center"
-             style={{ backgroundImage: `url('/images/11.PNG')` }}
-           />
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url('/images/11.PNG')` }}
+          />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         
@@ -96,41 +96,36 @@ export default function Home() {
 
               {/* Key Achievements */}
               <div className="space-y-3">
-                                 <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
-                   국내최초 기업 상장 재승인
-                 </p>
-                 <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
-                   국내 주요 형사사건 무죄
-                 </p>
+                <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
+                  국내최초 기업 상장 재승인
+                </p>
+                <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
+                  국내 주요 형사사건 무죄
+                </p>
               </div>
 
               {/* Stats */}
               <div className="flex justify-center gap-8 pt-8">
-                                 <div className="text-center">
-                   <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>12</div>
-                   <div className="text-sm text-gray-300">년의 경험</div>
-                 </div>
-                 <div className="text-center">
-                   <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>900+</div>
-                   <div className="text-sm text-gray-300">성공 사례</div>
-                 </div>
-                 <div className="text-center">
-                   <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>91%</div>
-                   <div className="text-sm text-gray-300">승소율</div>
-                 </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>12</div>
+                  <div className="text-sm text-gray-300">년의 경험</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>900+</div>
+                  <div className="text-sm text-gray-300">성공 사례</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>91%</div>
+                  <div className="text-sm text-gray-300">승소율</div>
+                </div>
               </div>
-
-              
             </div>
           </div>
         </div>
-
-
       </section>
 
-                                                       {/* Contact Form Section */}
-         <section id="contact-form" className="relative py-20 bg-gray-800">
-        
+      {/* 2. Contact Form Section */}
+      <section id="contact-form" className="relative py-20 bg-gray-800">
         <div className="relative z-10 w-full">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-lg shadow-xl p-8">
@@ -139,7 +134,7 @@ export default function Home() {
                 <p className="text-gray-600">전문 변호사가 직접 상담해드립니다</p>
               </div>
 
-                            <form className="space-y-6" onSubmit={handleSubmit}>
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -180,13 +175,13 @@ export default function Home() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     required
                   >
-                   <option value="">상담 분야를 선택해주세요</option>
-                   <option value="입찰권 분쟁">입찰권 분쟁</option>
-                   <option value="회원권 분쟁">회원권 분쟁</option>
-                   <option value="투자사기">투자사기</option>
-                   <option value="보이스피싱">보이스피싱</option>
-                   <option value="기타">기타</option>
-                 </select>
+                    <option value="">상담 분야를 선택해주세요</option>
+                    <option value="입찰권 분쟁">입찰권 분쟁</option>
+                    <option value="회원권 분쟁">회원권 분쟁</option>
+                    <option value="투자사기">투자사기</option>
+                    <option value="보이스피싱">보이스피싱</option>
+                    <option value="기타">기타</option>
+                  </select>
                 </div>
 
                 <div>
@@ -232,16 +227,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* 3. About Section - 4개 전문 분야 */}
       <section id="about" className="py-20 relative">
-                 {/* Background Image */}
-         <div className="absolute inset-0">
-           <div 
-             className="absolute inset-0 bg-cover bg-center"
-             style={{ backgroundImage: `url('/images/558.jpg')` }}
-           />
-           <div className="absolute inset-0 bg-black/70" />
-         </div>
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url('/images/558.jpg')` }}
+          />
+          <div className="absolute inset-0 bg-black/70" />
+        </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-white mb-4">4개 전문 분야, 완벽한 해결책</h2>
@@ -259,7 +254,7 @@ export default function Home() {
             </div>
             <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">회원권 분야</h3>
-                             <p className="font-medium mb-4" style={{ color: '#FFD700' }}>(골프장·콘도)</p>
+              <p className="font-medium mb-4" style={{ color: '#FFD700' }}>(골프장·콘도)</p>
               <ul className="space-y-2">
                 <li className="text-gray-700">• 골프 회원권 환불 소송</li>
                 <li className="text-gray-700">• 콘도 회원권 피해 구제</li>
@@ -286,22 +281,22 @@ export default function Home() {
 
           {/* 성과 섹션 */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-                         <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-               <div className="text-4xl font-bold mb-2">12</div>
-               <div className="text-lg font-medium">년 전문 경력</div>
-             </div>
-             <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-               <div className="text-4xl font-bold mb-2">900+</div>
-               <div className="text-lg font-medium">건 성공 사례</div>
-             </div>
-             <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-               <div className="text-4xl font-bold mb-2">91%</div>
-               <div className="text-lg font-medium">승소율</div>
-             </div>
-             <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFD700 0%, #FFA500 100%)' }}>
-               <div className="text-4xl font-bold mb-2">4</div>
-               <div className="text-lg font-medium">개월 평균 해결</div>
-             </div>
+            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
+              <div className="text-4xl font-bold mb-2">12</div>
+              <div className="text-lg font-medium">년 전문 경력</div>
+            </div>
+            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
+              <div className="text-4xl font-bold mb-2">900+</div>
+              <div className="text-lg font-medium">건 성공 사례</div>
+            </div>
+            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
+              <div className="text-4xl font-bold mb-2">91%</div>
+              <div className="text-lg font-medium">승소율</div>
+            </div>
+            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
+              <div className="text-4xl font-bold mb-2">4</div>
+              <div className="text-lg font-medium">개월 평균 해결</div>
+            </div>
           </div>
 
           {/* 변호사 소개 */}
@@ -318,7 +313,7 @@ export default function Home() {
                     />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">박영준</h4>
-                                     <p className="font-medium" style={{ color: '#FFD700' }}>대표변호사</p>
+                  <p className="font-medium" style={{ color: '#FFD700' }}>대표변호사</p>
                   <p className="text-sm text-gray-600 mt-1">12년 경력</p>
                 </div>
                 <div className="text-center">
@@ -358,7 +353,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* 4. Contact Section - 연락처 */}
       <section id="contact" className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -370,8 +365,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.554.554l3.644 3.644a1 1 0 01.554.554V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">주소</h3>
@@ -382,7 +377,6 @@ export default function Home() {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.554.554l3.644 3.644a1 1 0 01.554.554V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">전화</h3>
@@ -393,8 +387,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.554.554l3.644 3.644a1 1 0 01.554.554V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">이메일</h3>
@@ -421,44 +414,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section id="faq" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">자주 묻는 질문</h2>
-            <p className="text-lg text-gray-600">고객님들이 자주 문의하시는 내용입니다</p>
-          </div>
-          
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담은 무료인가요?</h3>
-              <p className="text-gray-700">네, 초기 상담은 무료로 진행됩니다. 구체적인 사건 분석과 해결 방안을 제시해드립니다.</p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담 신청 후 언제 연락받을 수 있나요?</h3>
-              <p className="text-gray-700">상담 신청 후 24시간 내에 전문 변호사가 직접 연락드립니다.</p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 원격 상담도 가능한가요?</h3>
-              <p className="text-gray-700">네, 전화나 화상회의를 통한 원격 상담도 가능합니다. 편의에 맞춰 선택하실 수 있습니다.</p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 소송 진행 기간은 얼마나 걸리나요?</h3>
-              <p className="text-gray-700">사건의 복잡도에 따라 다르지만, 평균적으로 4-6개월 정도 소요됩니다.</p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 성공 사례가 있나요?</h3>
-              <p className="text-gray-700">네, 900건 이상의 성공 사례가 있으며, 91%의 높은 승소율을 자랑합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
+      {/* 5. Services Section - 서비스 안내 */}
       <section id="services" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -550,7 +506,42 @@ export default function Home() {
         </div>
       </section>
 
-      
+      {/* 6. FAQ Section - 자주 묻는 질문 */}
+      <section id="faq" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">자주 묻는 질문</h2>
+            <p className="text-lg text-gray-600">고객님들이 자주 문의하시는 내용입니다</p>
+          </div>
+          
+          <div className="space-y-6">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담은 무료인가요?</h3>
+              <p className="text-gray-700">네, 초기 상담은 무료로 진행됩니다. 구체적인 사건 분석과 해결 방안을 제시해드립니다.</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담 신청 후 언제 연락받을 수 있나요?</h3>
+              <p className="text-gray-700">상담 신청 후 24시간 내에 전문 변호사가 직접 연락드립니다.</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 원격 상담도 가능한가요?</h3>
+              <p className="text-gray-700">네, 전화나 화상회의를 통한 원격 상담도 가능합니다. 편의에 맞춰 선택하실 수 있습니다.</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 소송 진행 기간은 얼마나 걸리나요?</h3>
+              <p className="text-gray-700">사건의 복잡도에 따라 다르지만, 평균적으로 4-6개월 정도 소요됩니다.</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 성공 사례가 있나요?</h3>
+              <p className="text-gray-700">네, 900건 이상의 성공 사례가 있으며, 91%의 높은 승소율을 자랑합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
