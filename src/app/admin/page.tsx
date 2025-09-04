@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { collection, getDocs, orderBy, query, where, addDoc } from 'firebase/firestore';
+import { collection, getDocs, orderBy, query, addDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { Search, Eye, Calendar, Phone, User, Users, TrendingUp, Clock } from 'lucide-react';
 

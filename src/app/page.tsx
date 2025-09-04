@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { db } from '@/lib/firebase';
 import { collection, addDoc, getDocs, query, where, orderBy } from 'firebase/firestore';
 import Header from '@/components/Header';
@@ -92,7 +92,7 @@ export default function Home() {
                 <p className="text-xl text-gray-200 leading-relaxed">
                   노력에 실력을 더하여, 최초를 개척하는 박영준 법률사무소
                 </p>
-              </div>
+          </div>
 
               {/* Key Achievements */}
               <div className="space-y-3">
@@ -102,9 +102,9 @@ export default function Home() {
                 <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
                   국내 주요 형사사건 무죄
                 </p>
-              </div>
+          </div>
 
-              {/* Stats */}
+          {/* Stats */}
               <div className="flex justify-center gap-8 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>12</div>
@@ -117,8 +117,8 @@ export default function Home() {
                 <div className="text-center">
                   <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>91%</div>
                   <div className="text-sm text-gray-300">승소율</div>
-                </div>
-              </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
@@ -129,46 +129,46 @@ export default function Home() {
         <div className="relative z-10 w-full">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-lg shadow-xl p-8">
-              <div className="text-center mb-8">
+            <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">무료 상담 신청</h2>
                 <p className="text-gray-600">전문 변호사가 직접 상담해드립니다</p>
+            </div>
+
+            <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  이름 *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="성함을 입력해주세요"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
               </div>
 
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      이름 *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="성함을 입력해주세요"
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  전화번호 *
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="휴대폰번호를 입력해주세요"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                      required
-                    />
+                  required
+                />
                   </div>
+              </div>
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      전화번호 *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="휴대폰번호를 입력해주세요"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
+              <div>
                   <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
                     상담 분야 *
-                  </label>
+                </label>
                   <select
                     id="service"
                     name="service"
@@ -182,43 +182,43 @@ export default function Home() {
                     <option value="보이스피싱">보이스피싱</option>
                     <option value="기타">기타</option>
                   </select>
-                </div>
+              </div>
 
-                <div>
-                  <label htmlFor="inquiry" className="block text-sm font-medium text-gray-700 mb-2">
-                    의뢰내용 *
-                  </label>
-                  <textarea
-                    id="inquiry"
-                    name="inquiry"
+              <div>
+                <label htmlFor="inquiry" className="block text-sm font-medium text-gray-700 mb-2">
+                  의뢰내용 *
+                </label>
+                <textarea
+                  id="inquiry"
+                  name="inquiry"
                     rows={4}
-                    placeholder="대략적인 의뢰내용을 적어주세요"
+                  placeholder="대략적인 의뢰내용을 적어주세요"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    required
-                  />
-                </div>
+                  required
+                />
+              </div>
 
-                <div className="flex items-start space-x-3">
-                  <input
-                    type="checkbox"
-                    id="privacy"
-                    name="privacy"
+              <div className="flex items-start space-x-3">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
                     className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                    required
-                  />
+                  required
+                />
                   <label htmlFor="privacy" className="text-sm text-gray-700">
-                    개인정보 수집 및 이용에 동의합니다. *
-                  </label>
-                </div>
+                  개인정보 수집 및 이용에 동의합니다. *
+                </label>
+              </div>
 
-                <button
-                  type="submit"
+              <button
+                type="submit"
                   className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors"
-                >
-                  무료 상담 신청하기
-                </button>
+              >
+                무료 상담 신청하기
+              </button>
 
-                <div className="text-center">
+              <div className="text-center">
                   <p className="text-sm text-gray-600">상담 신청 후 24시간 내에 연락드립니다</p>
                 </div>
               </form>
