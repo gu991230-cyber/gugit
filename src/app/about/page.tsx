@@ -165,14 +165,6 @@ export default function About() {
                     src="/images/park-youngjun.jpg" 
                     alt="박영준 대표변호사" 
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.className = 'w-24 h-24 bg-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center';
-                        parent.innerHTML = '<div class="flex items-baseline"><span class="text-3xl font-bold text-white">P</span><span class="text-lg font-bold text-white ml-1">Y</span></div>';
-                      }
-                    }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">박영준</h3>
@@ -210,14 +202,6 @@ export default function About() {
                     src="/images/park-minsu.jpg.jpg" 
                     alt="박민수 변호사" 
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.className = 'w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center';
-                        parent.innerHTML = '<div class="flex items-baseline"><span class="text-3xl font-bold text-white">P</span><span class="text-lg font-bold text-white ml-1">M</span></div>';
-                      }
-                    }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">박민수</h3>
@@ -255,14 +239,6 @@ export default function About() {
                     src="/images/lee-sujin.jpg.jpg" 
                     alt="이수진 변호사" 
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.className = 'w-24 h-24 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center';
-                        parent.innerHTML = '<div class="flex items-baseline"><span class="text-3xl font-bold text-white">L</span><span class="text-lg font-bold text-white ml-1">S</span></div>';
-                      }
-                    }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">이수진</h3>
