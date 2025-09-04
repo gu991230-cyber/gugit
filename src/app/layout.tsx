@@ -135,20 +135,12 @@ export default function RootLayout({
                     개인정보수집동의 <span className="underline cursor-pointer">[취급방침]</span>
                   </label>
                 </div>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById('contact-form');
-                    if (element) {
-                      element.scrollIntoView({ 
-                        behavior: 'smooth',
-                        block: 'start'
-                      });
-                    }
-                  }}
+                <Link 
+                  href="/#contact-form"
                   className="bg-gray-600 text-white px-6 py-2 rounded font-medium hover:bg-gray-700 transition-colors"
                 >
                   상담신청
-                </button>
+                </Link>
               </div>
             </div>
           </div>
