@@ -2,9 +2,7 @@
 
 import { useEffect } from 'react';
 import { db } from '@/lib/firebase';
-import { collection, addDoc, getDocs, query, where, orderBy } from 'firebase/firestore';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { collection, addDoc } from 'firebase/firestore';
 
 export default function Home() {
   useEffect(() => {
