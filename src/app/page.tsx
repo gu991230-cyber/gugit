@@ -250,11 +250,8 @@ export default function Home() {
       </section>
 
       {/* 4. Services Section - 승소 사례 */}
-      <section id="services" className="py-20 relative" style={{ 
-        backgroundImage: `url('/images/2984.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+      <section id="services" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ 
+        backgroundImage: `url('/images/11.PNG')`
       }}>
         {/* Light Overlay for text readability */}
         <div className="absolute inset-0 bg-black/30"></div>
