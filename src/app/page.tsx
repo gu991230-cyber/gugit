@@ -198,7 +198,7 @@ export default function Home() {
           {/* 변호사 소개 */}
           <div className="text-center mb-16">
             <h3 className="text-3xl font-bold text-white mb-8">전문 변호사 소개</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 w-full max-w-sm">
                 <div className="text-center mb-6">
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 overflow-hidden">
@@ -208,13 +208,13 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900">박영준</h4>
+                  <h4 className="text-xl font-bold text-white">박영준</h4>
                   <p className="font-medium" style={{ color: '#FFD700' }}>대표변호사</p>
-                  <p className="text-sm text-gray-600 mt-1">12년 경력</p>
+                  <p className="text-sm text-gray-200 mt-1">12년 경력</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-gray-900 mb-2">전문 분야</h5>
-                  <ul className="space-y-1 text-sm text-gray-600">
+                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
+                  <ul className="space-y-1 text-sm text-gray-200">
                     <li>• 입찰권 분야</li>
                     <li>• 투자사기 분야</li>
                     <li>• 보이스피싱 범죄</li>
@@ -231,16 +231,62 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900">김정훈</h4>
+                  <h4 className="text-xl font-bold text-white">김정훈</h4>
                   <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
-                  <p className="text-sm text-gray-600 mt-1">8년 경력</p>
+                  <p className="text-sm text-gray-200 mt-1">8년 경력</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-gray-900 mb-2">전문 분야</h5>
-                  <ul className="space-y-1 text-sm text-gray-600">
+                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
+                  <ul className="space-y-1 text-sm text-gray-200">
                     <li>• 회원권 분야</li>
                     <li>• 민사소송</li>
                     <li>• 계약 분쟁</li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* New: 김희정 파트너변호사 */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 w-full max-w-sm">
+                <div className="text-center mb-6">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 overflow-hidden">
+                    <img 
+                      src="/images/kim-heejung.jpg" 
+                      alt="김희정 파트너변호사" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold text-white">김희정</h4>
+                  <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
+                </div>
+                <div className="text-center">
+                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
+                  <ul className="space-y-1 text-sm text-gray-200">
+                    <li>• 민사소송</li>
+                    <li>• 계약 분쟁</li>
+                    <li>• 사기 피해 구제</li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* New: 김주희 파트너변호사 */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 w-full max-w-sm">
+                <div className="text-center mb-6">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 overflow-hidden">
+                    <img 
+                      src="/images/kim-juhee.jpg" 
+                      alt="김주희 파트너변호사" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold text-white">김주희</h4>
+                  <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
+                </div>
+                <div className="text-center">
+                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
+                  <ul className="space-y-1 text-sm text-gray-200">
+                    <li>• 투자사기 분야</li>
+                    <li>• 회원권 분쟁</li>
+                    <li>• 보이스피싱 범죄</li>
                   </ul>
                 </div>
               </div>
