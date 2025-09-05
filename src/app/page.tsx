@@ -498,11 +498,25 @@ export default function Home() {
       </section>
 
       {/* 5. Services Section - 서비스 안내 */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
+      <section id="services" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ 
+        backgroundImage: `url('/images/351.jpg')`,
+        imageRendering: 'high-quality',
+        WebkitImageRendering: 'high-quality',
+        MozImageRendering: 'high-quality',
+        msImageRendering: 'high-quality',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        filter: 'contrast(1.1) saturate(1.1)',
+        WebkitFilter: 'contrast(1.1) saturate(1.1)'
+      }}>
+        {/* Light Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">서비스 안내</h2>
-            <p className="text-lg text-gray-600">전문 분야별 맞춤형 법률 서비스를 제공합니다</p>
+            <h2 className="text-3xl font-bold text-white mb-4">서비스 안내</h2>
+            <p className="text-lg text-gray-200">전문 분야별 맞춤형 법률 서비스를 제공합니다</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
