@@ -251,7 +251,7 @@ export default function Home() {
 
       {/* 4. Services Section - 승소 사례 */}
       <section id="services" className="py-20 relative" style={{ 
-        backgroundImage: `url('/images/1445.PNG')`,
+        backgroundImage: `url('/images/2984.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
