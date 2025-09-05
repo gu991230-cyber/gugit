@@ -250,14 +250,19 @@ export default function Home() {
       </section>
 
       {/* 4. Services Section - 승소 사례 */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="services" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ 
+        backgroundImage: `url('/images/2299.PNG')`
+      }}>
+        {/* Light Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">승소 사례</h2>
-            <p className="text-xl text-gray-600">12년간 축적된 전문성으로 이루어낸 실제 성과</p>
+            <h2 className="text-4xl font-bold text-white mb-4">승소 사례</h2>
+            <p className="text-xl text-gray-200">12년간 축적된 전문성으로 이루어낸 실제 성과</p>
           </div>
           
-          <p className="text-2xl font-bold text-center text-gray-800 mb-16">고객님들의 실제 승소내역과 함께 입증되는 성공 스토리</p>
+          <p className="text-2xl font-bold text-center text-white mb-16">고객님들의 실제 승소내역과 함께 입증되는 성공 스토리</p>
           
           {/* 사례 그리드 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
