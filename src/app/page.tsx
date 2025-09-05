@@ -82,41 +82,17 @@ export default function Home() {
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center text-white space-y-8">
-              {/* Main Title */}
               <div className="space-y-4">
-                <h1 className="text-6xl font-bold leading-tight">
-                  IM THE FIRST
+                <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                  의뢰인의 권리와 피해 회복에 집중 합니다
                 </h1>
-                <p className="text-xl text-gray-200 leading-relaxed">
-                  노력에 실력을 더하여, 최초를 개척하는 박영준 법률사무소
+                <p className="text-2xl md:text-3xl font-semibold text-white">
+                  믿을 수 있는 동반자 박영준 법률사무소입니다.
                 </p>
-          </div>
-
-              {/* Key Achievements */}
-              <div className="space-y-3">
-                <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
-                  국내최초 기업 상장 재승인
+                <p className="text-sm md:text-base text-gray-200 mt-2">
+                  20년 경력과 400여건의 환불사례 80% 이상의 승소율로 증명합니다.
                 </p>
-                <p className="text-lg font-semibold" style={{ color: '#FFD700' }}>
-                  국내 주요 형사사건 무죄
-                </p>
-          </div>
-
-          {/* Stats */}
-              <div className="flex justify-center gap-8 pt-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>12</div>
-                  <div className="text-sm text-gray-300">년의 경험</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>900+</div>
-                  <div className="text-sm text-gray-300">성공 사례</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold" style={{ color: '#FFD700' }}>91%</div>
-                  <div className="text-sm text-gray-300">승소율</div>
-            </div>
-            </div>
+              </div>
             </div>
           </div>
         </div>
