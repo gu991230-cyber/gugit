@@ -201,7 +201,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 w-full max-w-sm">
                 <div className="text-center mb-6">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 overflow-hidden">
                     <img 
                       src="/images/park-youngjun.jpg" 
                       alt="박영준 대표변호사" 
@@ -224,7 +224,7 @@ export default function Home() {
               
               <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 w-full max-w-sm">
                 <div className="text-center mb-6">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 overflow-hidden">
                     <img 
                       src="/images/2.png" 
                       alt="김정훈 파트너변호사" 
