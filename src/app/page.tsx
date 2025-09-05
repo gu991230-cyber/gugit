@@ -321,141 +321,81 @@ export default function Home() {
           
           {/* 사례 그리드 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-              <div className="aspect-[3/4] bg-gray-200 relative">
-                <img
-                  src="/images/11.jpg"
-                  alt="로맨스스캠 피해 회복 사례"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                    로맨스스캠
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">로맨스스캠 피해 회복 사례</h3>
-                <p className="text-gray-600 text-sm mb-4">온라인 로맨스스캠 피해금 회수</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">결과</span>
-                  <span className="text-sm font-semibold text-green-600">피해금 90% 회수</span>
-                </div>
+            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+              <img
+                src="/images/11.jpg"
+                alt="로맨스스캠 피해 회복 사례"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                  로맨스스캠
+                </span>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-              <div className="aspect-[3/4] bg-gray-200 relative">
-                <img
-                  src="/images/12.jpg"
-                  alt="골프 회원권 환불 성공 사례"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                    회원권
-                  </span>
-                </div>
+            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+              <img
+                src="/images/12.jpg"
+                alt="골프 회원권 환불 성공 사례"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                  회원권
+                </span>
               </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">골프 회원권 환불 성공 사례</h3>
-                <p className="text-gray-600 text-sm mb-4">골프장 폐업으로 인한 회원권 환불 소송 승소</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">결과</span>
-                  <span className="text-sm font-semibold text-green-600">전액 환불 성공</span>
-                </div>
-              </div>
-              </div>
+            </div>
 
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-              <div className="aspect-[3/4] bg-gray-200 relative">
-                <img
-                  src="/images/13.jpg"
-                  alt="가상화폐 투자사기 구제 사례"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                    투자사기
-                  </span>
-                </div>
+            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+              <img
+                src="/images/13.jpg"
+                alt="가상화폐 투자사기 구제 사례"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                  투자사기
+                </span>
               </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">가상화폐 투자사기 구제 사례</h3>
-                <p className="text-gray-600 text-sm mb-4">가상화폐 투자사기로 인한 피해금 회수</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">결과</span>
-                  <span className="text-sm font-semibold text-green-600">피해금 95% 회수</span>
-                </div>
-              </div>
-              </div>
+            </div>
 
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-              <div className="aspect-[3/4] bg-gray-200 relative">
-                <img
-                  src="/images/14.jpg"
-                  alt="보이스피싱 피해 회복 사례"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                    보이스피싱
-                  </span>
-                </div>
+            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+              <img
+                src="/images/14.jpg"
+                alt="보이스피싱 피해 회복 사례"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                  보이스피싱
+                </span>
               </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">보이스피싱 피해 회복 사례</h3>
-                <p className="text-gray-600 text-sm mb-4">전화금융사기 피해금 신속 회수</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">결과</span>
-                  <span className="text-sm font-semibold text-green-600">피해금 90% 회수</span>
-                </div>
-              </div>
-              </div>
+            </div>
 
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-              <div className="aspect-[3/4] bg-gray-200 relative">
-                <img
-                  src="/images/15.jpg"
-                  alt="펀드 사기 집단소송 사례"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                    투자사기
-                  </span>
-                </div>
+            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+              <img
+                src="/images/15.jpg"
+                alt="펀드 사기 집단소송 사례"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                  투자사기
+                </span>
               </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">펀드 사기 집단소송 사례</h3>
-                <p className="text-gray-600 text-sm mb-4">대규모 펀드 사기 집단소송 승소</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">결과</span>
-                  <span className="text-sm font-semibold text-green-600">집단소송 승소</span>
-                </div>
-              </div>
-              </div>
+            </div>
 
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-              <div className="aspect-[3/4] bg-gray-200 relative">
-                <img
-                  src="/images/16.jpg"
-                  alt="쇼핑몰 사기 피해 회복 사례"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                    쇼핑몰사기
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">쇼핑몰 사기 피해 회복 사례</h3>
-                <p className="text-gray-600 text-sm mb-4">온라인 쇼핑몰 사기 피해금 회수</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">결과</span>
-                  <span className="text-sm font-semibold text-green-600">피해금 85% 회수</span>
-                </div>
+            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+              <img
+                src="/images/16.jpg"
+                alt="쇼핑몰 사기 피해 회복 사례"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                  쇼핑몰사기
+                </span>
               </div>
             </div>
           </div>
