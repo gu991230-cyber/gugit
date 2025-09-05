@@ -190,6 +190,22 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <h5 className="text-lg font-bold text-white mb-2">경력</h5>
+                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-200 text-left">
+                    <li>• 남양주시 고문변호사</li>
+                    <li>• 구리시의회 고문변호사</li>
+                    <li>• 남양주시 복지재단 감사</li>
+                    <li>• 남양주시 시민축구단 감사</li>
+                    <li>• 남양주시 계약심의위원회 위원</li>
+                    <li>• 남양주시 의료급여 재처분 심의위원회 위원</li>
+                    <li>• 남양주시 신청사 건립기금 운용심의위원회 위원</li>
+                    <li>• 의정부지방법원 남양주지원 민사조정위원</li>
+                    <li>• 의정부지방검찰청 남양주지청 형사조정위원</li>
+                    <li>• 의정부지방검찰청 형사상고 심의위원회 위원</li>
+                    <li>• 의정부경찰서 경미범죄심사위원회 위원</li>
+                    <li>• 구리경찰서 집시자문위원회 위원</li>
+                    <li>• 구리경찰서 교통안전심의위원회 위원</li>
+                    <li>• 법무법인 중부로 소속변호사</li>
+                  </ul>
                 </div>
               </div>
               
