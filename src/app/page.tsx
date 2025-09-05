@@ -249,6 +249,13 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <h5 className="text-lg font-bold text-white mb-2">경력</h5>
+                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-200 text-left">
+                    <li>• 서울대 졸업</li>
+                    <li>• 사법고시시험 44회 합격</li>
+                    <li>• 전 서울북부지방법원 조정위원</li>
+                    <li>• 전 성남검찰청 검사직무대리</li>
+                    <li>• 법무법인 소현, 주안 근무</li>
+                  </ul>
                 </div>
               </div>
               
