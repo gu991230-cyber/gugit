@@ -109,7 +109,7 @@ export default function RootLayout({
               </div>
               
               {/* Right Section - Agreement & Submit */}
-              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 sm:ml-4">
+              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
                 <div className="flex items-center space-x-2">
                   <input
                     type="checkbox"
