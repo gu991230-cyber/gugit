@@ -251,13 +251,13 @@ export default function Home() {
 
       {/* 4. Services Section - 승소 사례 */}
       <section id="services" className="py-20 relative" style={{ 
-        backgroundImage: `url('/images/1455.jpg')`,
+        backgroundImage: `url('/images/1445.PNG')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}>
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Light Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -513,8 +513,8 @@ export default function Home() {
                 <li>• 낙찰자 선정 이의신청</li>
                 <li>• 입찰 관련 소송 대리</li>
               </ul>
-            </div>
-            
+              </div>
+
             <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
