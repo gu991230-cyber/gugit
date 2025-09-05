@@ -604,11 +604,25 @@ export default function Home() {
       </section>
 
       {/* 6. FAQ Section - 자주 묻는 질문 */}
-      <section id="faq" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
+      <section id="faq" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ 
+        backgroundImage: `url('/images/451.jpg')`,
+        imageRendering: 'high-quality',
+        WebkitImageRendering: 'high-quality',
+        MozImageRendering: 'high-quality',
+        msImageRendering: 'high-quality',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        filter: 'contrast(1.1) saturate(1.1)',
+        WebkitFilter: 'contrast(1.1) saturate(1.1)'
+      }}>
+        {/* Light Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">자주 묻는 질문</h2>
-            <p className="text-xl text-gray-600">고객님들이 자주 문의하시는 내용입니다</p>
+            <h2 className="text-4xl font-bold text-white mb-4">자주 묻는 질문</h2>
+            <p className="text-xl text-gray-200">고객님들이 자주 문의하시는 내용입니다</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
