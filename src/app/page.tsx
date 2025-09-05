@@ -351,7 +351,180 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Contact Section - 연락처 */}
+      {/* 4. Services Section - 승소 사례 */}
+      <section id="services" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">승소 사례</h2>
+            <p className="text-xl text-gray-600">12년간 축적된 전문성으로 이루어낸 실제 성과</p>
+          </div>
+          
+          <p className="text-2xl font-bold text-center text-gray-800 mb-16">고객님들의 실제 승소내역과 함께 입증되는 성공 스토리</p>
+          
+          {/* 사례 그리드 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-200 relative">
+                <img
+                  src="/images/3.jpg"
+                  alt="로맨스스캠 피해 회복 사례"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                    로맨스스캠
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">로맨스스캠 피해 회복 사례</h3>
+                <p className="text-gray-600 text-sm mb-4">온라인 로맨스스캠 피해금 회수</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-500">결과</span>
+                  <span className="text-sm font-semibold text-green-600">피해금 90% 회수</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-200 relative">
+                <img
+                  src="/images/4.jpg"
+                  alt="골프 회원권 환불 성공 사례"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                    회원권
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">골프 회원권 환불 성공 사례</h3>
+                <p className="text-gray-600 text-sm mb-4">골프장 폐업으로 인한 회원권 환불 소송 승소</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-500">결과</span>
+                  <span className="text-sm font-semibold text-green-600">전액 환불 성공</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-200 relative">
+                <img
+                  src="/images/5.jpg"
+                  alt="가상화폐 투자사기 구제 사례"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                    투자사기
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">가상화폐 투자사기 구제 사례</h3>
+                <p className="text-gray-600 text-sm mb-4">가상화폐 투자사기로 인한 피해금 회수</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-500">결과</span>
+                  <span className="text-sm font-semibold text-green-600">피해금 95% 회수</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-200 relative">
+                <img
+                  src="/images/6.jpg"
+                  alt="보이스피싱 피해 회복 사례"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                    보이스피싱
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">보이스피싱 피해 회복 사례</h3>
+                <p className="text-gray-600 text-sm mb-4">전화금융사기 피해금 신속 회수</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-500">결과</span>
+                  <span className="text-sm font-semibold text-green-600">피해금 90% 회수</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-200 relative">
+                <img
+                  src="/images/7.jpg"
+                  alt="펀드 사기 집단소송 사례"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                    투자사기
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">펀드 사기 집단소송 사례</h3>
+                <p className="text-gray-600 text-sm mb-4">대규모 펀드 사기 집단소송 승소</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-500">결과</span>
+                  <span className="text-sm font-semibold text-green-600">집단소송 승소</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-200 relative">
+                <img
+                  src="/images/8.jpg"
+                  alt="쇼핑몰 사기 피해 회복 사례"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
+                    쇼핑몰사기
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">쇼핑몰 사기 피해 회복 사례</h3>
+                <p className="text-gray-600 text-sm mb-4">온라인 쇼핑몰 사기 피해금 회수</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-500">결과</span>
+                  <span className="text-sm font-semibold text-green-600">피해금 85% 회수</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* 누적 성과 */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="bg-white rounded-lg p-6 shadow text-center">
+              <div className="text-4xl font-bold text-orange-500 mb-2">900+</div>
+              <div className="text-lg font-medium text-gray-700">승소 사례</div>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow text-center">
+              <div className="text-4xl font-bold text-orange-500 mb-2">91%</div>
+              <div className="text-lg font-medium text-gray-700">승소율</div>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow text-center">
+              <div className="text-4xl font-bold text-orange-500 mb-2">190억</div>
+              <div className="text-lg font-medium text-gray-700">피해금 회수액</div>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow text-center">
+              <div className="text-4xl font-bold text-orange-500 mb-2">4개월</div>
+              <div className="text-lg font-medium text-gray-700">평균 해결기간</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Contact Section - 연락처 */}
       <section id="contact" className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -506,36 +679,88 @@ export default function Home() {
 
       {/* 6. FAQ Section - 자주 묻는 질문 */}
       <section id="faq" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">자주 묻는 질문</h2>
-            <p className="text-lg text-gray-600">고객님들이 자주 문의하시는 내용입니다</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">자주 묻는 질문</h2>
+            <p className="text-xl text-gray-600">고객님들이 자주 문의하시는 내용입니다</p>
           </div>
           
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담은 무료인가요?</h3>
-              <p className="text-gray-700">네, 초기 상담은 무료로 진행됩니다. 구체적인 사건 분석과 해결 방안을 제시해드립니다.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담은 무료인가요?</h3>
+                <p className="text-gray-700">네, 초기 상담은 무료로 진행됩니다. 30분 내외로 사건의 개요를 파악하고 승소 가능성을 검토해드립니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 사기 피해 금액이 적어도 소송이 가능한가요?</h3>
+                <p className="text-gray-700">피해 금액의 크기보다는 사건의 성격과 승소 가능성이 중요합니다. 소액이라도 명백한 사기 사건이라면 소송 진행이 가능합니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 성공보수제로 진행 가능한가요?</h3>
+                <p className="text-gray-700">사건의 성격과 승소 가능성에 따라 성공보수제 진행이 가능합니다. 일반적으로 착수금 + 성공보수 또는 순수 성공보수제 중 선택하실 수 있습니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 사기 사건은 얼마나 빨리 대응해야 하나요?</h3>
+                <p className="text-gray-700">사기 사건은 시간이 생명입니다. 특히 피해 직후 72시간 이내에 대응하는 것이 중요합니다. 빠른 대응으로 계좌 추적, 재산 보전, 증거 수집이 가능합니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 고소장 접수부터 결과까지 얼마나 걸리나요?</h3>
+                <p className="text-gray-700">형사고소의 경우 2-6개월, 민사소송의 경우 6개월-1년 정도 소요됩니다. 다만 사건의 복잡성과 피고인의 협조 여부에 따라 달라질 수 있습니다.</p>
+              </div>
             </div>
             
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 상담 신청 후 언제 연락받을 수 있나요?</h3>
-              <p className="text-gray-700">상담 신청 후 24시간 내에 전문 변호사가 직접 연락드립니다.</p>
+            <div className="space-y-6">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 입찰 보증금을 돌려받지 못하고 있어요</h3>
+                <p className="text-gray-700">입찰 보증금 미환급은 명백한 계약 위반입니다. 계약서, 입금 증명서, 의무 이행 증빙 등을 준비하시면 신속하게 회수할 수 있습니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 골프장/콘도 회원권이 휴지조각이 됐어요</h3>
+                <p className="text-gray-700">회원권 사기는 매우 흔한 유형입니다. 회원권 매매계약서, 입금 증명서, 허위 정보 제공 증거 등을 바탕으로 손해배상과 형사고발이 가능합니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 원금 보장한다고 했는데 돈을 잃었어요</h3>
+                <p className="text-gray-700">원금 보장 약속은 대부분 허위입니다. 투자 권유 과정의 녹음, 계약서, 허위 설명 증거 등을 수집하여 사기죄로 고발하고 손해배상을 청구할 수 있습니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 검찰/경찰 사칭 전화에 속아 송금했어요</h3>
+                <p className="text-gray-700">보이스피싱 피해는 즉시 신고해야 합니다. 통화 내용, 송금 내역, 계좌 정보를 보존하고 지급정지 요청을 통해 피해 확산을 방지해야 합니다.</p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 카카오톡/문자 메시지도 증거가 되나요?</h3>
+                <p className="text-gray-700">네, 카카오톡과 문자 메시지는 중요한 증거입니다. 스크린샷과 함께 공증을 받거나, 디지털 포렌식을 통해 증거능력을 확보할 수 있습니다.</p>
+              </div>
             </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 원격 상담도 가능한가요?</h3>
-              <p className="text-gray-700">네, 전화나 화상회의를 통한 원격 상담도 가능합니다. 편의에 맞춰 선택하실 수 있습니다.</p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 소송 진행 기간은 얼마나 걸리나요?</h3>
-              <p className="text-gray-700">사건의 복잡도에 따라 다르지만, 평균적으로 4-6개월 정도 소요됩니다.</p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 성공 사례가 있나요?</h3>
-              <p className="text-gray-700">네, 900건 이상의 성공 사례가 있으며, 91%의 높은 승소율을 자랑합니다.</p>
+          </div>
+          
+          {/* 사기 피해 해결 실적 */}
+          <div className="mt-20">
+            <h3 className="text-3xl font-bold text-center text-gray-900 mb-16">사기 피해 해결 실적</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="bg-red-50 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">900+</div>
+                <div className="text-lg font-medium text-gray-700">사기 사건 해결</div>
+              </div>
+              <div className="bg-red-50 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">91%</div>
+                <div className="text-lg font-medium text-gray-700">피해 회수율</div>
+              </div>
+              <div className="bg-red-50 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">72H</div>
+                <div className="text-lg font-medium text-gray-700">긴급 대응</div>
+              </div>
+              <div className="bg-red-50 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">12년</div>
+                <div className="text-lg font-medium text-gray-700">사기 전문 경력</div>
+              </div>
             </div>
           </div>
         </div>

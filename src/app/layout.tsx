@@ -60,8 +60,8 @@ export default function RootLayout({
                 <Link href="/#about" className="text-white/80 hover:text-white transition-colors font-medium">
                   소개
                 </Link>
-                <Link href="/services" className="text-white/80 hover:text-white transition-colors font-medium">
-                  서비스
+                <Link href="/#services" className="text-white/80 hover:text-white transition-colors font-medium">
+                  사례
                 </Link>
                 <Link href="/#contact-form" className="text-white/80 hover:text-white transition-colors font-medium">
                   상담신청
