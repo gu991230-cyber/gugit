@@ -323,7 +323,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-col gap-8 mb-16">
             <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
-                src="/images/11.jpg"
+                src="/images/11.jpg?v=3"
                 alt="로맨스스캠 피해 회복 사례"
                 className="w-auto h-auto max-w-full max-h-full object-contain"
               />
@@ -336,7 +336,7 @@ export default function Home() {
 
             <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
-                src="/images/12.jpg"
+                src="/images/12.jpg?v=3"
                 alt="골프 회원권 환불 성공 사례"
                 className="w-auto h-auto max-w-full max-h-full object-contain"
               />
@@ -349,7 +349,7 @@ export default function Home() {
 
             <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
-                src="/images/13.jpg"
+                src="/images/13.jpg?v=3"
                 alt="가상화폐 투자사기 구제 사례"
                 className="w-auto h-auto max-w-full max-h-full object-contain"
               />
@@ -362,7 +362,7 @@ export default function Home() {
 
             <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
-                src="/images/14.jpg"
+                src="/images/14.jpg?v=3"
                 alt="보이스피싱 피해 회복 사례"
                 className="w-auto h-auto max-w-full max-h-full object-contain"
               />
@@ -375,7 +375,7 @@ export default function Home() {
 
             <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
-                src="/images/15.jpg"
+                src="/images/15.jpg?v=3"
                 alt="펀드 사기 집단소송 사례"
                 className="w-auto h-auto max-w-full max-h-full object-contain"
               />
@@ -388,7 +388,7 @@ export default function Home() {
 
             <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
-                src="/images/16.jpg"
+                src="/images/16.jpg?v=3"
                 alt="쇼핑몰 사기 피해 회복 사례"
                 className="w-auto h-auto max-w-full max-h-full object-contain"
               />
