@@ -320,7 +320,7 @@ export default function Home() {
           <p className="text-2xl font-bold text-center text-white mb-16">고객님들의 실제 승소내역과 함께 입증되는 성공 스토리</p>
           
           {/* 사례 그리드 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-col gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
             <div>
               <img
                 src="/images/11.jpg?v=3"
