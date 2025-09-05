@@ -324,7 +324,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
-                  src="/images/3.jpg"
+                  src="/images/11.jpg"
                   alt="로맨스스캠 피해 회복 사례"
                   className="w-full h-full object-cover"
                 />
@@ -347,7 +347,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
-                  src="/images/4.jpg"
+                  src="/images/12.jpg"
                   alt="골프 회원권 환불 성공 사례"
                   className="w-full h-full object-cover"
                 />
@@ -370,7 +370,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
-                  src="/images/5.jpg"
+                  src="/images/13.jpg"
                   alt="가상화폐 투자사기 구제 사례"
                   className="w-full h-full object-cover"
                 />
@@ -393,7 +393,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
-                  src="/images/6.jpg"
+                  src="/images/14.jpg"
                   alt="보이스피싱 피해 회복 사례"
                   className="w-full h-full object-cover"
                 />
@@ -416,7 +416,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
-                  src="/images/7.jpg"
+                  src="/images/15.jpg"
                   alt="펀드 사기 집단소송 사례"
                   className="w-full h-full object-cover"
                 />
@@ -439,7 +439,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
-                  src="/images/8.jpg"
+                  src="/images/16.jpg"
                   alt="쇼핑몰 사기 피해 회복 사례"
                   className="w-full h-full object-cover"
                 />
