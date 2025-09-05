@@ -437,11 +437,12 @@ export default function Home() {
       </section>
 
       {/* 5. Contact Section - 연락처 */}
-      <section id="contact" className="py-20 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-4">
+      <section id="contact" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/images/772.jpg')`, imageRendering: 'high-quality', WebkitImageRendering: 'high-quality', MozImageRendering: 'high-quality', msImageRendering: 'high-quality', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">연락처</h2>
-            <p className="text-lg text-gray-600">언제든지 편하게 연락주세요</p>
+            <h2 className="text-3xl font-bold text-white mb-4">연락처</h2>
+            <p className="text-lg text-gray-200">언제든지 편하게 연락주세요</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -452,8 +453,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">주소</h3>
-              <p className="text-gray-600">서울특별시 강남구 테헤란로 123<br />법무법인 빌딩 5층</p>
+              <h3 className="text-xl font-bold text-white mb-2">주소</h3>
+              <p className="text-gray-200">서울특별시 강남구 테헤란로 123<br />법무법인 빌딩 5층</p>
             </div>
             
             <div className="text-center">
@@ -462,9 +463,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.554.554l3.644 3.644a1 1 0 01.554.554V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">전화</h3>
-              <p className="text-gray-600">02-1234-5678</p>
-              <p className="text-gray-600">010-1111-2222</p>
+              <h3 className="text-xl font-bold text-white mb-2">전화</h3>
+              <p className="text-gray-200">02-1234-5678</p>
+              <p className="text-gray-200">010-1111-2222</p>
             </div>
             
             <div className="text-center">
@@ -473,13 +474,13 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">이메일</h3>
-              <p className="text-gray-600">info@parkyoungjunlaw.com</p>
+              <h3 className="text-xl font-bold text-white mb-2">이메일</h3>
+              <p className="text-gray-200">info@parkyoungjunlaw.com</p>
             </div>
           </div>
           
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">상담 시간</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">상담 시간</h3>
             <div className="bg-white rounded-lg shadow-lg p-6 inline-block">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
