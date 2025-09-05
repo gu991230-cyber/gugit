@@ -213,12 +213,7 @@ export default function Home() {
                   <p className="text-sm text-gray-200 mt-1">12년 경력</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
-                  <ul className="space-y-1 text-sm text-gray-200">
-                    <li>• 입찰권 분야</li>
-                    <li>• 투자사기 분야</li>
-                    <li>• 보이스피싱 범죄</li>
-                  </ul>
+                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
                 </div>
               </div>
               
@@ -236,11 +231,13 @@ export default function Home() {
                   <p className="text-sm text-gray-200 mt-1">8년 경력</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
+                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
                   <ul className="space-y-1 text-sm text-gray-200">
-                    <li>• 회원권 분야</li>
-                    <li>• 민사소송</li>
-                    <li>• 계약 분쟁</li>
+                    <li>• 사법시험 55회 합격</li>
+                    <li>• 사법연수원 46기 수료</li>
+                    <li>• 공군법무관(국가소송)</li>
+                    <li>• 서울중앙지방법원 조정위원</li>
+                    <li>• 서울성동구청 고문변호사</li>
                   </ul>
                 </div>
               </div>
@@ -259,12 +256,7 @@ export default function Home() {
                   <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
-                  <ul className="space-y-1 text-sm text-gray-200">
-                    <li>• 민사소송</li>
-                    <li>• 계약 분쟁</li>
-                    <li>• 사기 피해 구제</li>
-                  </ul>
+                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
                 </div>
               </div>
               
@@ -282,12 +274,7 @@ export default function Home() {
                   <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">전문 분야</h5>
-                  <ul className="space-y-1 text-sm text-gray-200">
-                    <li>• 투자사기 분야</li>
-                    <li>• 회원권 분쟁</li>
-                    <li>• 보이스피싱 범죄</li>
-                  </ul>
+                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
                 </div>
               </div>
             </div>
@@ -329,37 +316,37 @@ export default function Home() {
               />
             </div>
 
-            <div>
+              <div>
               <img
                 src="/images/12.jpg?v=3"
                 alt="골프 회원권 환불 성공 사례"
                 className="w-full h-auto"
-              />
-            </div>
+                />
+              </div>
 
-            <div>
+              <div>
               <img
                 src="/images/13.jpg?v=3"
                 alt="가상화폐 투자사기 구제 사례"
                 className="w-full h-auto"
-              />
-            </div>
+                />
+              </div>
 
-            <div>
+              <div>
               <img
                 src="/images/14.jpg?v=3"
                 alt="보이스피싱 피해 회복 사례"
                 className="w-full h-auto"
-              />
-            </div>
+                />
+              </div>
 
-            <div>
+              <div>
               <img
                 src="/images/15.jpg?v=3"
                 alt="펀드 사기 집단소송 사례"
                 className="w-full h-auto"
-              />
-            </div>
+                />
+              </div>
 
             <div>
               <img
