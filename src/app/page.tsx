@@ -250,15 +250,14 @@ export default function Home() {
       </section>
 
       {/* 4. Services Section - 승소 사례 */}
-      <section id="services" className="py-20 relative">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/1455.jpg')` }}
-          />
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
+      <section id="services" className="py-20 relative" style={{ 
+        backgroundImage: `url('/images/1455.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -292,7 +291,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
@@ -314,8 +313,8 @@ export default function Home() {
                   <span className="text-sm font-semibold text-green-600">전액 환불 성공</span>
                 </div>
               </div>
-            </div>
-            
+              </div>
+
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
@@ -337,8 +336,8 @@ export default function Home() {
                   <span className="text-sm font-semibold text-green-600">피해금 95% 회수</span>
                 </div>
               </div>
-            </div>
-            
+              </div>
+
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
@@ -360,8 +359,8 @@ export default function Home() {
                   <span className="text-sm font-semibold text-green-600">피해금 90% 회수</span>
                 </div>
               </div>
-            </div>
-            
+              </div>
+
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
@@ -383,8 +382,8 @@ export default function Home() {
                   <span className="text-sm font-semibold text-green-600">집단소송 승소</span>
                 </div>
               </div>
-            </div>
-            
+              </div>
+
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
               <div className="aspect-[3/4] bg-gray-200 relative">
                 <img
@@ -544,8 +543,8 @@ export default function Home() {
                 <li>• 가상화폐 투자사기 구제</li>
                 <li>• 투자 계약 사기 대응</li>
               </ul>
-            </div>
-            
+              </div>
+
             <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -561,8 +560,8 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          
-          <div className="text-center">
+
+              <div className="text-center">
             <div className="bg-white rounded-lg shadow-lg p-8 inline-block max-w-2xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">서비스 특징</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
