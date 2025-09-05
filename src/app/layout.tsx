@@ -66,7 +66,7 @@ export default function RootLayout({
                 <Link href="/#contact-form" className="text-white/80 hover:text-white transition-colors font-medium">
                   상담신청
                 </Link>
-                <Link href="/faq" className="text-white/80 hover:text-white transition-colors font-medium">
+                <Link href="/#faq" className="text-white/80 hover:text-white transition-colors font-medium">
                   FAQ
                 </Link>
               </div>
