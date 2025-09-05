@@ -605,7 +605,7 @@ export default function Home() {
 
       {/* 6. FAQ Section - 자주 묻는 질문 */}
       <section id="faq" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ 
-        backgroundImage: `url('/images/451.jpg')`,
+        backgroundImage: `url('/images/440.jpg')`,
         imageRendering: 'high-quality',
         WebkitImageRendering: 'high-quality',
         MozImageRendering: 'high-quality',
