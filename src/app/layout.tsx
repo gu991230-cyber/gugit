@@ -39,16 +39,9 @@ export default function RootLayout({
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-2">
-                <img 
-                  src="/images/pyj.PNG" 
-                  alt="박영준 법률사무소 로고" 
-                  className="w-10 h-10 object-contain"
-                  style={{ 
-                    filter: 'brightness(0) invert(1)',
-                    mixBlendMode: 'multiply',
-                    backgroundColor: 'transparent'
-                  }}
-                />
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-gray-800 font-bold text-lg">PYJ</span>
+                </div>
                 <span className="text-lg font-bold text-white">박영준 법률사무소</span>
               </Link>
               
@@ -63,8 +56,8 @@ export default function RootLayout({
                 <Link href="/#services" className="text-white/80 hover:text-white transition-colors font-medium">
                   사례
                 </Link>
-                <Link href="/#contact-form" className="text-white/80 hover:text-white transition-colors font-medium">
-                  상담신청
+                <Link href="/#contact" className="text-white/80 hover:text-white transition-colors font-medium">
+                  연락처
                 </Link>
                 <Link href="/#faq" className="text-white/80 hover:text-white transition-colors font-medium">
                   FAQ
@@ -136,10 +129,10 @@ export default function RootLayout({
                   </label>
                 </div>
                 <Link 
-                  href="/#contact-form"
+                  href="/#contact"
                   className="bg-gray-600 text-white px-6 py-2 rounded font-medium hover:bg-gray-700 transition-colors"
                 >
-                  상담신청
+                  연락처
                 </Link>
               </div>
             </div>
