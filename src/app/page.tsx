@@ -321,11 +321,11 @@ export default function Home() {
           
           {/* 사례 그리드 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-col gap-8 mb-16">
-            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+            <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
                 src="/images/11.jpg"
                 alt="로맨스스캠 피해 회복 사례"
-                className="max-h-full max-w-full object-contain"
+                className="w-auto h-auto max-w-full max-h-full object-contain"
               />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
@@ -334,11 +334,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+            <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
                 src="/images/12.jpg"
                 alt="골프 회원권 환불 성공 사례"
-                className="max-h-full max-w-full object-contain"
+                className="w-auto h-auto max-w-full max-h-full object-contain"
               />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
@@ -347,11 +347,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+            <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
                 src="/images/13.jpg"
                 alt="가상화폐 투자사기 구제 사례"
-                className="max-h-full max-w-full object-contain"
+                className="w-auto h-auto max-w-full max-h-full object-contain"
               />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
@@ -360,11 +360,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+            <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
                 src="/images/14.jpg"
                 alt="보이스피싱 피해 회복 사례"
-                className="max-h-full max-w-full object-contain"
+                className="w-auto h-auto max-w-full max-h-full object-contain"
               />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
@@ -373,11 +373,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+            <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
                 src="/images/15.jpg"
                 alt="펀드 사기 집단소송 사례"
-                className="max-h-full max-w-full object-contain"
+                className="w-auto h-auto max-w-full max-h-full object-contain"
               />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
@@ -386,11 +386,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-[640px] bg-white relative flex items-center justify-center p-4 shadow">
+            <div className="h-auto md:h-[360px] lg:h-[420px] bg-white relative flex items-center justify-center p-3 shadow">
               <img
                 src="/images/16.jpg"
                 alt="쇼핑몰 사기 피해 회복 사례"
-                className="max-h-full max-w-full object-contain"
+                className="w-auto h-auto max-w-full max-h-full object-contain"
               />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
