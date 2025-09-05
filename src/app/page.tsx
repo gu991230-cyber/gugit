@@ -251,11 +251,16 @@ export default function Home() {
 
       {/* 4. Services Section - 승소 사례 */}
       <section id="services" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ 
-        backgroundImage: `url('/images/11.PNG')`,
+        backgroundImage: `url('/images/2299.PNG')`,
         imageRendering: 'high-quality',
         WebkitImageRendering: 'high-quality',
         MozImageRendering: 'high-quality',
-        msImageRendering: 'high-quality'
+        msImageRendering: 'high-quality',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        filter: 'contrast(1.1) saturate(1.1)',
+        WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
         <div className="absolute inset-0 bg-black/30"></div>
