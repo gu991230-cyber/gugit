@@ -356,25 +356,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* 누적 성과 */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-500 mb-2">900+</div>
-              <div className="text-lg font-medium text-gray-700">승소 사례</div>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-500 mb-2">91%</div>
-              <div className="text-lg font-medium text-gray-700">승소율</div>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-500 mb-2">190억</div>
-              <div className="text-lg font-medium text-gray-700">피해금 회수액</div>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-orange-500 mb-2">4개월</div>
-              <div className="text-lg font-medium text-gray-700">평균 해결기간</div>
-            </div>
-          </div>
+          {/* 누적 성과 카드 제거 */}
         </div>
       </section>
 
@@ -400,12 +382,10 @@ export default function Home() {
               <p className="text-3xl font-bold mt-2 leading-snug">송파구 가락동 중대로 200<br />태화빌딩 2층 201호</p>
             </div>
             <div className="space-y-2 mb-8 text-lg">
-              <p>E. <a className="underline hover:opacity-90" href="mailto:info@krlaw.kr">info@krlaw.kr</a></p>
-              <p>T. <a className="underline hover:opacity-90" href="tel:0262467721">02-6246-7721</a></p>
+              <p>E. <a className="underline hover:opacity-90" href="mailto:YJPLAW515@gmail.com">YJPLAW515@gmail.com</a></p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <a href="mailto:info@krlaw.kr" className="rounded-md bg-white/10 hover:bg-white/20 text-white py-3 text-center font-semibold">이메일 발송</a>
-              <a href="tel:0262467721" className="rounded-md bg-white text-gray-900 py-3 text-center font-semibold">전화 연결</a>
+            <div className="grid grid-cols-1 gap-4">
+              <a href="mailto:YJPLAW515@gmail.com" className="rounded-md bg-white text-gray-900 py-3 text-center font-semibold">이메일 발송</a>
             </div>
           </div>
         </div>
