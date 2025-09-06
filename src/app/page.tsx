@@ -316,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* 5. Contact Section - 연락처 (Google Maps) */}
-      <section id="contact" className="py-20 bg-gray-700">
+      <section id="contact" className="py-16 bg-gray-700">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Google Map */}
           <div className="h-[420px] w-full rounded-lg overflow-hidden shadow-lg">

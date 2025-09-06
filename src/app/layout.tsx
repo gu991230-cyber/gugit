@@ -76,8 +76,8 @@ export default function RootLayout({
           </div>
         </nav>
         
-        {/* Add bottom padding to avoid content being hidden behind the fixed bottom bar */}
-        <main className="min-h-screen pb-24 lg:pb-28">
+        {/* Footer will handle extra bottom spacing; avoid white band above footer */}
+        <main className="min-h-screen">
           {children}
         </main>
         
