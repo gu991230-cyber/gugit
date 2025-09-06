@@ -546,28 +546,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* 사기 피해 해결 실적 */}
-          <div className="mt-20">
-            <h3 className="text-3xl font-bold text-center text-gray-900 mb-16">사기 피해 해결 실적</h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="bg-red-50 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-red-600 mb-2">900+</div>
-                <div className="text-lg font-medium text-gray-700">사기 사건 해결</div>
-              </div>
-              <div className="bg-red-50 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-red-600 mb-2">91%</div>
-                <div className="text-lg font-medium text-gray-700">피해 회수율</div>
-              </div>
-              <div className="bg-red-50 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-red-600 mb-2">72H</div>
-                <div className="text-lg font-medium text-gray-700">긴급 대응</div>
-              </div>
-              <div className="bg-red-50 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-red-600 mb-2">12년</div>
-                <div className="text-lg font-medium text-gray-700">사기 전문 경력</div>
-              </div>
-            </div>
-          </div>
+          {/* 실적 블록 제거 요청으로 삭제 */}
         </div>
       </section>
     </div>
