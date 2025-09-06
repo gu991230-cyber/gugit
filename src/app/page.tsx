@@ -76,7 +76,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('/images/11.PNG')` }}
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
         
         <div className="relative z-10 w-full">
@@ -107,7 +107,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('/images/558.jpg')` }}
           />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/80" />
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
@@ -295,7 +295,7 @@ export default function Home() {
         WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -378,63 +378,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Contact Section - 연락처 */}
-      <section id="contact" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/images/772.jpg')`, imageRendering: 'high-quality', WebkitImageRendering: 'high-quality', MozImageRendering: 'high-quality', msImageRendering: 'high-quality', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="relative z-10 max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">연락처</h2>
-            <p className="text-lg text-gray-200">언제든지 편하게 연락주세요</p>
+      {/* 5. Contact Section - 연락처 (Google Maps) */}
+      <section id="contact" className="py-20 bg-gray-700">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          {/* Google Map */}
+          <div className="h-[420px] w-full rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              title="법률사무소 위치"
+              src={`https://www.google.com/maps?q=${encodeURIComponent('대한민국 서울특별시 송파구 가락동 중대로 200 태화빌딩 2층 201호')}&output=embed`}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">주소</h3>
-              <p className="text-gray-200">서울특별시 강남구 테헤란로 123<br />법무법인 빌딩 5층</p>
+          {/* Contact Details */}
+          <div className="bg-gray-800/60 rounded-lg p-8 text-white flex flex-col justify-center shadow-lg">
+            <div className="mb-6">
+              <h2 className="text-4xl font-extrabold leading-tight">서울특별시</h2>
+              <p className="text-3xl font-bold mt-2 leading-snug">송파구 가락동 중대로 200<br />태화빌딩 2층 201호</p>
             </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.554.554l3.644 3.644a1 1 0 01.554.554V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">전화</h3>
-              <p className="text-gray-200">02-1234-5678</p>
-              <p className="text-gray-200">010-1111-2222</p>
+            <div className="space-y-2 mb-8 text-lg">
+              <p>E. <a className="underline hover:opacity-90" href="mailto:info@krlaw.kr">info@krlaw.kr</a></p>
+              <p>T. <a className="underline hover:opacity-90" href="tel:0262467721">02-6246-7721</a></p>
             </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">이메일</h3>
-              <p className="text-gray-200">info@parkyoungjunlaw.com</p>
-            </div>
-          </div>
-          
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">상담 시간</h3>
-            <div className="bg-white rounded-lg shadow-lg p-6 inline-block">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">평일</h4>
-                  <p className="text-gray-600">09:00 - 18:00</p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">토요일</h4>
-                  <p className="text-gray-600">09:00 - 13:00</p>
-                </div>
-              </div>
-              <p className="text-sm text-gray-500 mt-4">일요일 및 공휴일 휴무</p>
+            <div className="grid grid-cols-2 gap-4">
+              <a href="mailto:info@krlaw.kr" className="rounded-md bg-white/10 hover:bg-white/20 text-white py-3 text-center font-semibold">이메일 발송</a>
+              <a href="tel:0262467721" className="rounded-md bg-white text-gray-900 py-3 text-center font-semibold">전화 연결</a>
             </div>
           </div>
         </div>
@@ -454,7 +425,7 @@ export default function Home() {
         WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -462,85 +433,59 @@ export default function Home() {
             <p className="text-lg text-gray-200">전문 분야별 맞춤형 법률 서비스를 제공합니다</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">입찰권 분쟁</h3>
-              <p className="text-gray-600 mb-4">공공기관 입찰 관련 분쟁 해결 및 구제</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• 입찰 자격 제한 구제</li>
-                <li>• 낙찰자 선정 이의신청</li>
-                <li>• 입찰 관련 소송 대리</li>
-              </ul>
-              </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">회원권 분쟁</h3>
-              <p className="text-gray-600 mb-4">골프장·콘도 회원권 관련 분쟁 해결</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• 골프 회원권 환불 소송</li>
-                <li>• 콘도 회원권 피해 구제</li>
-                <li>• 회원권 계약 분쟁 해결</li>
+          {/* 텍스트 전용 서비스 목록 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-3">입찰권 분쟁</h3>
+              <p className="text-gray-200 mb-2">공공기관 입찰 관련 분쟁 해결 및 구제</p>
+              <ul className="list-disc list-inside text-gray-200 space-y-1">
+                <li>입찰 자격 제한 구제</li>
+                <li>낙찰자 선정 이의신청</li>
+                <li>입찰 관련 소송 대리</li>
               </ul>
             </div>
-            
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">투자사기 분야</h3>
-              <p className="text-gray-600 mb-4">투자사기 피해 회복 및 손해배상</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• 폰지사기 피해 회복</li>
-                <li>• 가상화폐 투자사기 구제</li>
-                <li>• 투자 계약 사기 대응</li>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-3">회원권 분쟁</h3>
+              <p className="text-gray-200 mb-2">골프장·콘도 회원권 관련 분쟁 해결</p>
+              <ul className="list-disc list-inside text-gray-200 space-y-1">
+                <li>골프 회원권 환불 소송</li>
+                <li>콘도 회원권 피해 구제</li>
+                <li>회원권 계약 분쟁 해결</li>
               </ul>
-              </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.554.554l3.644 3.644a1 1 0 01.554.554V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">보이스피싱 범죄</h3>
-              <p className="text-gray-600 mb-4">전화금융사기 피해 구제 및 회복</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• 전화금융사기 피해 구제</li>
-                <li>• 메신저 피싱 사건 대응</li>
-                <li>• 사기 피해금 회수 소송</li>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-3">투자사기 분야</h3>
+              <p className="text-gray-200 mb-2">투자사기 피해 회복 및 손해배상</p>
+              <ul className="list-disc list-inside text-gray-200 space-y-1">
+                <li>폰지사기 피해 회복</li>
+                <li>가상화폐 투자사기 구제</li>
+                <li>투자 계약 사기 대응</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-3">보이스피싱 범죄</h3>
+              <p className="text-gray-200 mb-2">전화금융사기 피해 구제 및 회복</p>
+              <ul className="list-disc list-inside text-gray-200 space-y-1">
+                <li>전화금융사기 피해 구제</li>
+                <li>메신저 피싱 사건 대응</li>
+                <li>사기 피해금 회수 소송</li>
               </ul>
             </div>
           </div>
-
-              <div className="text-center">
-            <div className="bg-white rounded-lg shadow-lg p-8 inline-block max-w-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">서비스 특징</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">전문성</h4>
-                  <p className="text-gray-600">각 분야별 전문 변호사가 담당</p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">신속성</h4>
-                  <p className="text-gray-600">24시간 내 초기 상담 응답</p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">성공률</h4>
-                  <p className="text-gray-600">91%의 높은 승소율 보장</p>
-                </div>
-              </div>
+ 
+          {/* 텍스트 전용 서비스 특징 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <h4 className="text-xl font-bold text-white mb-2">전문성</h4>
+              <p className="text-gray-200">각 분야별 전문 변호사가 담당</p>
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-white mb-2">신속성</h4>
+              <p className="text-gray-200">24시간 내 초기 상담 응답</p>
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-white mb-2">성공률</h4>
+              <p className="text-gray-200">91%의 높은 승소율 보장</p>
             </div>
           </div>
         </div>
@@ -560,7 +505,7 @@ export default function Home() {
         WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
