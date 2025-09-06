@@ -15,7 +15,7 @@ const Footer = () => {
       
       {/* Main Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -82,7 +82,7 @@ const Footer = () => {
           {/* Services & Office Hours */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-orange-500">전문 분야</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-12 items-start">
               <ul className="space-y-3">
                 <li className="text-gray-300 text-sm">• 입찰권 분야</li>
                 <li className="text-gray-300 text-sm">• 회원권 분야</li>
