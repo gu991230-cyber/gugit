@@ -416,12 +416,14 @@ export default function Home() {
           {/* 텍스트 전용 서비스 목록 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-3">입찰권 분쟁</h3>
-              <p className="text-gray-200 mb-2">공공기관 입찰 관련 분쟁 해결 및 구제</p>
+              <h3 className="text-2xl font-bold text-white mb-3">부동산 분쟁</h3>
+              <p className="text-gray-200 mb-2">재개발·수용 등 부동산 관련 분쟁 해결</p>
               <ul className="list-disc list-inside text-gray-200 space-y-1">
-                <li>입찰 자격 제한 구제</li>
-                <li>낙찰자 선정 이의신청</li>
-                <li>입찰 관련 소송 대리</li>
+                <li>재개발사업 진행 과정에서 발생하는 각종 분쟁</li>
+                <li>토지수용</li>
+                <li>영업보상</li>
+                <li>건물명도</li>
+                <li>현금청산</li>
               </ul>
             </div>
             <div>
@@ -453,21 +455,7 @@ export default function Home() {
             </div>
           </div>
  
-          {/* 텍스트 전용 서비스 특징 */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <h4 className="text-xl font-bold text-white mb-2">전문성</h4>
-              <p className="text-gray-200">각 분야별 전문 변호사가 담당</p>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold text-white mb-2">신속성</h4>
-              <p className="text-gray-200">24시간 내 초기 상담 응답</p>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold text-white mb-2">성공률</h4>
-              <p className="text-gray-200">91%의 높은 승소율 보장</p>
-            </div>
-          </div>
+          {/* 서비스 특징 블록 제거 요청에 따라 삭제 */}
         </div>
       </section>
 
@@ -526,7 +514,7 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 입찰 보증금을 돌려받지 못하고 있어요</h3>
                 <p className="text-gray-700">입찰 보증금 미환급은 명백한 계약 위반입니다. 계약서, 입금 증명서, 의무 이행 증빙 등을 준비하시면 신속하게 회수할 수 있습니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 골프장/콘도 회원권이 휴지조각이 됐어요</h3>
                 <p className="text-gray-700">회원권 사기는 매우 흔한 유형입니다. 회원권 매매계약서, 입금 증명서, 허위 정보 제공 증거 등을 바탕으로 손해배상과 형사고발이 가능합니다.</p>
