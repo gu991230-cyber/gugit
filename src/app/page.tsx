@@ -184,13 +184,13 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-white">박영준</h4>
+                  <h4 className="text-xl font-bold text-gray-900">박영준</h4>
                   <p className="font-medium" style={{ color: '#FFD700' }}>대표변호사</p>
-                  <p className="text-sm text-gray-200 mt-1">12년 경력</p>
+                  <p className="text-sm text-gray-800 mt-1">12년 경력</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
-                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-200 text-left">
+                  <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
+                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-800 text-left">
                     <li>• 남양주시 고문변호사</li>
                     <li>• 구리시의회 고문변호사</li>
                     <li>• 남양주시 복지재단 감사</li>
@@ -218,13 +218,13 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-white">김정훈</h4>
+                  <h4 className="text-xl font-bold text-gray-900">김정훈</h4>
                   <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
-                  <p className="text-sm text-gray-200 mt-1">8년 경력</p>
+                  <p className="text-sm text-gray-800 mt-1">8년 경력</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
-                  <ul className="space-y-1 text-sm text-gray-200">
+                  <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
+                  <ul className="space-y-1 text-sm text-gray-800">
                     <li>• 사법시험 55회 합격</li>
                     <li>• 사법연수원 46기 수료</li>
                     <li>• 공군법무관(국가소송)</li>
@@ -244,12 +244,12 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-white">김희정</h4>
+                  <h4 className="text-xl font-bold text-gray-900">김희정</h4>
                   <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
-                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-200 text-left">
+                  <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
+                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-800 text-left">
                     <li>• 서울대 졸업</li>
                     <li>• 사법고시시험 44회 합격</li>
                     <li>• 전 서울북부지방법원 조정위원</li>
@@ -269,11 +269,11 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-white">김주희</h4>
+                  <h4 className="text-xl font-bold text-gray-900">김주희</h4>
                   <p className="font-medium" style={{ color: '#FFD700' }}>파트너변호사</p>
                 </div>
                 <div className="text-center">
-                  <h5 className="text-lg font-bold text-white mb-2">경력</h5>
+                  <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
                 </div>
               </div>
             </div>
@@ -551,17 +551,17 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 골프장/콘도 회원권이 휴지조각이 됐어요</h3>
                 <p className="text-gray-700">회원권 사기는 매우 흔한 유형입니다. 회원권 매매계약서, 입금 증명서, 허위 정보 제공 증거 등을 바탕으로 손해배상과 형사고발이 가능합니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 원금 보장한다고 했는데 돈을 잃었어요</h3>
                 <p className="text-gray-700">원금 보장 약속은 대부분 허위입니다. 투자 권유 과정의 녹음, 계약서, 허위 설명 증거 등을 수집하여 사기죄로 고발하고 손해배상을 청구할 수 있습니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 검찰/경찰 사칭 전화에 속아 송금했어요</h3>
                 <p className="text-gray-700">보이스피싱 피해는 즉시 신고해야 합니다. 통화 내용, 송금 내역, 계좌 정보를 보존하고 지급정지 요청을 통해 피해 확산을 방지해야 합니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 카카오톡/문자 메시지도 증거가 되나요?</h3>
                 <p className="text-gray-700">네, 카카오톡과 문자 메시지는 중요한 증거입니다. 스크린샷과 함께 공증을 받거나, 디지털 포렌식을 통해 증거능력을 확보할 수 있습니다.</p>
