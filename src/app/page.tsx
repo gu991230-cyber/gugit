@@ -132,7 +132,7 @@ export default function Home() {
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">박영준</h4>
                   <p className="font-medium" style={{ color: '#12284A' }}>대표변호사</p>
-                  <p className="text-sm text-gray-800 mt-1">12년 경력</p>
+                  <p className="text-sm text-gray-800 mt-1">32년 경력</p>
                 </div>
                 <div className="text-center">
                   <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
@@ -166,7 +166,7 @@ export default function Home() {
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">김정훈</h4>
                   <p className="font-medium" style={{ color: '#12284A' }}>변호사</p>
-                  <p className="text-sm text-gray-800 mt-1">2년 경력</p>
+                  <p className="text-sm text-gray-800 mt-1">3년 경력</p>
                 </div>
                 <div className="text-center">
                   <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
@@ -191,7 +191,7 @@ export default function Home() {
                     />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">김희정</h4>
-                  <p className="font-medium" style={{ color: '#12284A' }}>파트너변호사</p>
+                  <p className="font-medium" style={{ color: '#12284A' }}>대표변호사</p>
                   <p className="text-sm text-gray-800 mt-1">22년 경력</p>
                 </div>
                 <div className="text-center">
@@ -222,7 +222,7 @@ export default function Home() {
                     />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">김주희</h4>
-                  <p className="font-medium" style={{ color: '#12284A' }}>파트너변호사</p>
+                  <p className="font-medium" style={{ color: '#12284A' }}>대표변호사</p>
                   <p className="text-sm text-gray-800 mt-1">24년 경력</p>
                 </div>
                 <div className="text-center">
