@@ -274,6 +274,13 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <h5 className="text-lg font-bold text-gray-900 mb-2">경력</h5>
+                  <ul className="space-y-1 text-xs md:text-sm leading-relaxed text-gray-800 text-left">
+                    <li>• 한국외국어대학교 졸업</li>
+                    <li>• 제43회 사법시험 합격</li>
+                    <li>• 변호사 김영철법률사무소</li>
+                    <li>• 법무법인 주완 변호사</li>
+                    <li>• 법무법인 명인 변호사</li>
+                  </ul>
                 </div>
               </div>
             </div>
