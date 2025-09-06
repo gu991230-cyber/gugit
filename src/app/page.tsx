@@ -90,7 +90,7 @@ export default function Home() {
                   믿을 수 있는 동반자 박영준 법률사무소입니다.
                 </p>
                 <p className="text-sm md:text-base text-gray-200 mt-2">
-                  20년 경력과 400여건의 환불사례 80% 이상의 승소율로 증명합니다.
+                  특정 분야에서만 30년 이상의 경력과 600여건의 환불사례, 그리고 모든 것은 승소율로 증명합니다.
                 </p>
               </div>
             </div>
