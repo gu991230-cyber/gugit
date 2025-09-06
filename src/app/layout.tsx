@@ -82,9 +82,9 @@ export default function RootLayout({
         </main>
         
         {/* Fixed Bottom Consultation Bar */}
-        <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-gray-800 border-t border-gray-600 shadow-xl">
+        <div className="fixed bottom-6 left-0 right-0 z-[9999] bg-gray-800/95 border border-gray-600 shadow-2xl rounded-lg mx-4 md:mx-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row justify-between items-center py-4 lg:py-6 space-y-4 lg:space-y-0">
+            <div className="flex flex-col lg:flex-row justify-between items-center py-3 lg:py-4 space-y-3 lg:space-y-0">
               {/* Left Section - Contact Info */}
               <div className="flex items-center space-x-6 text-white">
                 <div className="flex items-center space-x-2">
