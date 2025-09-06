@@ -117,21 +117,13 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="relative z-10 border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex flex-col md:flex-row justify-between items-start">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
                <p>&copy; 2025 박영준 법률사무소. All rights reserved.</p>
                <p className="mt-1">대표변호사: 박영준</p>
             </div>
-            <div className="flex space-x-8 text-sm">
-                                              <Link href="/faq" className="text-gray-400 hover:text-orange-500 transition-colors text-center min-w-[60px]">
-                   FAQ
-                 </Link>
-                 <Link href="/services" className="text-gray-400 hover:text-orange-500 transition-colors text-center min-w-[60px]">
-                   사례
-                 </Link>
-                 <Link href="/about" className="text-gray-400 hover:text-orange-500 transition-colors text-center min-w-[60px]">
-                   회사소개
-                 </Link>
+            <div className="text-right text-white/90 font-semibold text-base md:text-lg">
+              고민하지 마시고 지금 상담신청 남겨주세요.
             </div>
           </div>
         </div>
