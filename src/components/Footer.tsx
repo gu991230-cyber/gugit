@@ -37,37 +37,19 @@ const Footer = () => {
               최선을 다하겠습니다.
             </p>
             
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mb-6">
-              <div className="text-center">
-                                 <div className="text-2xl font-bold text-orange-500 mb-1">12</div>
-                 <p className="text-xs text-gray-400">년의 경험</p>
-               </div>
-               <div className="text-center">
-                 <div className="text-2xl font-bold text-orange-500 mb-1">900+</div>
-                 <p className="text-xs text-gray-400">성공 사례</p>
-               </div>
-               <div className="text-center">
-                 <div className="text-2xl font-bold text-orange-500 mb-1">91%</div>
-                 <p className="text-xs text-gray-400">승소율</p>
-               </div>
-            </div>
-
+            {/* Stats removed */}
+ 
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                                                                                      <Phone className="h-4 w-4 text-orange-500" />
-                 <span className="text-gray-300">010-1111-2222</span>
-               </div>
                <div className="flex items-center space-x-3">
                  <Mail className="h-4 w-4 text-orange-500" />
-                 <span className="text-gray-300">contact@parkyoungjunlawfirm.com</span>
+                 <span className="text-gray-300">YJPLAW515@gmail.com</span>
                </div>
                <div className="flex items-center space-x-3">
                  <MapPin className="h-4 w-4 text-orange-500" />
-                 <span className="text-gray-300">[주소 정보]</span>
-              </div>
-            </div>
+                 <span className="text-gray-300">대한민국 서울특별시 송파구 가락동 중대로 200 태화빌딩 2층 201호</span>
+               </div>
+             </div>
           </div>
 
           {/* Quick Links */}
