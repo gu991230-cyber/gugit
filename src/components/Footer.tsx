@@ -114,6 +114,13 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Call-to-action text placed above the fixed consultation bar */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-right text-white font-bold text-2xl md:text-3xl leading-snug mb-4">
+          고민하지 마시고 지금 상담신청 남겨주세요.
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="relative z-10 border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
@@ -121,9 +128,6 @@ const Footer = () => {
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
                <p>&copy; 2025 박영준 법률사무소. All rights reserved.</p>
                <p className="mt-1">대표변호사: 박영준</p>
-            </div>
-            <div className="text-right text-white/90 font-semibold text-base md:text-lg">
-              고민하지 마시고 지금 상담신청 남겨주세요.
             </div>
           </div>
         </div>
