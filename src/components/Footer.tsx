@@ -15,7 +15,7 @@ const Footer = () => {
       
       {/* Main Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-x-16 items-start">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -79,36 +79,35 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services & Office Hours */}
+          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-orange-500">전문 분야</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-12 items-start">
-              <ul className="space-y-3">
-                <li className="text-gray-300 text-sm">• 입찰권 분야</li>
-                <li className="text-gray-300 text-sm">• 회원권 분야</li>
-                <li className="text-gray-300 text-sm">• 투자사기 분야</li>
-                <li className="text-gray-300 text-sm">• 보이스피싱 범죄</li>
-              </ul>
+            <ul className="space-y-3">
+              <li className="text-gray-300 text-sm">• 입찰권 분야</li>
+              <li className="text-gray-300 text-sm">• 회원권 분야</li>
+              <li className="text-gray-300 text-sm">• 투자사기 분야</li>
+              <li className="text-gray-300 text-sm">• 보이스피싱 범죄</li>
+            </ul>
+          </div>
 
-              <div>
-                <h4 className="text-orange-500 font-semibold mb-4 flex items-center">
-                  <Clock className="h-4 w-4 mr-2" />
-                  운영 시간
-                </h4>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">평일</span>
-                    <span className="text-gray-300">09:00 - 18:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">토요일</span>
-                    <span className="text-gray-300">09:00 - 13:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">일요일/공휴일</span>
-                    <span className="text-gray-300">휴무</span>
-                  </div>
-                </div>
+          {/* Office Hours */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6 text-orange-500 flex items-center">
+              <Clock className="h-4 w-4" />
+              <span className="ml-2">운영 시간</span>
+            </h3>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between">
+                <span className="text-gray-400">평일</span>
+                <span className="text-gray-300">09:00 - 18:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-400">토요일</span>
+                <span className="text-gray-300">09:00 - 13:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-400">일요일/공휴일</span>
+                <span className="text-gray-300">휴무</span>
               </div>
             </div>
           </div>
