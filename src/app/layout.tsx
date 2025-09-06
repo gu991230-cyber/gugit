@@ -39,9 +39,12 @@ export default function RootLayout({
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-gray-800 font-bold text-lg">PYJ</span>
-                </div>
+                <img
+                  src="/THIS.png"
+                  alt="로고"
+                  className="w-10 h-10 object-contain"
+                  style={{ mixBlendMode: 'multiply' }}
+                />
                 <span className="text-lg font-bold text-white">박영준 법률사무소</span>
               </Link>
               
