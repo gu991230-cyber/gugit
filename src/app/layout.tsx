@@ -57,7 +57,7 @@ export default function RootLayout({
                   사례
                 </Link>
                 <Link href="/#contact" className="text-white/80 hover:text-white transition-colors font-medium">
-                  연락처
+                  오시는 길
                 </Link>
                 <Link href="/#faq" className="text-white/80 hover:text-white transition-colors font-medium">
                   FAQ
