@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gray-800 text-white pb-20">
+    <footer className="relative bg-gray-800 text-white pb-12">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div 
@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       
       {/* Main Footer Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -113,7 +113,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="relative z-10 border-t border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
                <p>&copy; 2025 박영준 법률사무소. All rights reserved.</p>
