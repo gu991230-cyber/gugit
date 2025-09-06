@@ -414,7 +414,7 @@ export default function Home() {
           </div>
           
           {/* 텍스트 전용 서비스 목록 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
             <div>
               <h3 className="text-2xl font-bold text-white mb-3">부동산 분쟁</h3>
               <p className="text-gray-200 mb-2">재개발·수용 등 부동산 관련 분쟁 해결</p>
@@ -451,6 +451,15 @@ export default function Home() {
                 <li>전화금융사기 피해 구제</li>
                 <li>메신저 피싱 사건 대응</li>
                 <li>사기 피해금 회수 소송</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-3">금전청구</h3>
+              <p className="text-gray-200 mb-2">대여금, 추심금, 매매대금, 물품대금 등 관련된 권리를 청구</p>
+              <ul className="list-disc list-inside text-gray-200 space-y-1">
+                <li>추심금</li>
+                <li>물품대금</li>
+                <li>매매대금</li>
               </ul>
             </div>
           </div>
