@@ -111,64 +111,10 @@ export default function Home() {
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-white mb-4">4개 전문 분야, 완벽한 해결책</h2>
-          <p className="text-lg text-center text-gray-200 mb-16">입찰권·회원권·투자사기·보이스피싱 전문 법무법인</p>
-          
-          {/* 전문 분야 소개 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">입찰권 분야</h3>
-              <ul className="space-y-2">
-                <li className="text-gray-700">• 공공기관 입찰 관련 분쟁 해결</li>
-                <li className="text-gray-700">• 입찰 자격 제한 및 배제 구제</li>
-                <li className="text-gray-700">• 낙찰자 선정 이의신청 대리</li>
-              </ul>
-            </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">회원권 분야</h3>
-              <p className="font-medium mb-4" style={{ color: '#FFD700' }}>(골프장·콘도)</p>
-              <ul className="space-y-2">
-                <li className="text-gray-700">• 골프 회원권 환불 소송</li>
-                <li className="text-gray-700">• 콘도 회원권 피해 구제</li>
-                <li className="text-gray-700">• 회원권 관련 계약 분쟁 해결</li>
-              </ul>
-            </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">투자사기 분야</h3>
-              <ul className="space-y-2">
-                <li className="text-gray-700">• 폰지사기 피해 회복</li>
-                <li className="text-gray-700">• 가상화폐 투자사기 구제</li>
-                <li className="text-gray-700">• 투자 계약 사기 손해배상</li>
-              </ul>
-            </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">보이스피싱 범죄</h3>
-              <ul className="space-y-2">
-                <li className="text-gray-700">• 전화금융사기 피해 구제</li>
-                <li className="text-gray-700">• 메신저 피싱 사건 대응</li>
-                <li className="text-gray-700">• 사기 피해금 회수 소송</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* 성과 섹션 */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-              <div className="text-4xl font-bold mb-2">12</div>
-              <div className="text-lg font-medium">년 전문 경력</div>
-            </div>
-            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-              <div className="text-4xl font-bold mb-2">900+</div>
-              <div className="text-lg font-medium">건 성공 사례</div>
-            </div>
-            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-              <div className="text-4xl font-bold mb-2">91%</div>
-              <div className="text-lg font-medium">승소율</div>
-            </div>
-            <div className="text-white rounded-lg p-6 text-center" style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' }}>
-              <div className="text-4xl font-bold mb-2">4</div>
-              <div className="text-lg font-medium">개월 평균 해결</div>
-            </div>
+          <h2 className="text-3xl font-bold text-center text-white mb-4">선택과 집중 !</h2>
+          <p className="text-lg text-center text-gray-200 mb-10">오로지 해오던 전문 분야에서만 활동 합니다.</p>
+          <div className="max-w-4xl mx-auto text-center text-gray-100 text-lg leading-relaxed mb-16">
+            변호사가 수십명인 대형 법무법인에서 원하는 결과를 찾지 못하시는 많은 분들이 계십니다. 성형외과도 대형 병원은 직원의사의 검증 안된 실력 탓에 만족을 못하는 환자들이 정말 많습니다. 오로지 20년간 맡은 바 임무만을 완벽하게 수행하는 박영준 변호사님과 함께하세요.
           </div>
 
           {/* 변호사 소개 */}
