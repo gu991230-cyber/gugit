@@ -30,8 +30,8 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img src="/images/THIS.png?v=2" alt="로고" className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
-              <div>
-                 <span className="text-2xl font-bold text-white">
+              <div className="flex-1 min-w-0">
+                 <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white whitespace-nowrap">
                   박영준 법률사무소
                 </span>
                 <p className="text-xs text-gray-400">
