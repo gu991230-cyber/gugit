@@ -15,17 +15,9 @@ const Footer = () => {
       
       {/* Main Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* Call-to-action text in main footer area */}
-        <div className="text-white mb-8">
-          <div className="text-3xl md:text-4xl leading-relaxed">
-            기다리면 해결될까요? 아닙니다.<br />
-            문제는 지금 대응할 때 풀립니다.<br />
-            전문가의 차이가 결과의 차이입니다.<br />
-            고민하지 마시고 지금 상담신청 남겨주세요.
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-x-16 items-start">
+        <div className="flex flex-col space-y-8">
+          {/* Company Info Section - Top */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-x-16 items-start">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -119,9 +111,20 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          
+          {/* Call-to-action text - Bottom Right */}
+          <div className="flex justify-end">
+            <div className="text-white text-right">
+              <div className="text-2xl md:text-3xl leading-relaxed">
+                기다리면 해결될까요? 아닙니다.<br />
+                문제는 지금 대응할 때 풀립니다.<br />
+                전문가의 차이가 결과의 차이입니다.<br />
+                고민하지 마시고 지금 상담신청 남겨주세요.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
 
       {/* Bottom Bar */}
       <div className="relative z-10 border-t border-gray-700">
