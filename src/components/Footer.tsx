@@ -60,17 +60,17 @@ const Footer = () => {
                  </Link>
                </li>
                <li>
-                 <Link href="/about" className="text-gray-300 hover:text-orange-500 transition-colors">
-                   법무법인 소개
+                 <Link href="/#about" className="text-gray-300 hover:text-orange-500 transition-colors">
+                   소개
                  </Link>
                </li>
                <li>
-                 <Link href="/services" className="text-gray-300 hover:text-orange-500 transition-colors">
+                 <Link href="/#services" className="text-gray-300 hover:text-orange-500 transition-colors">
                    사례
                  </Link>
                </li>
                <li>
-                 <Link href="/faq" className="text-gray-300 hover:text-orange-500 transition-colors">
+                 <Link href="/#faq" className="text-gray-300 hover:text-orange-500 transition-colors">
                    FAQ
                  </Link>
               </li>
