@@ -38,7 +38,7 @@ export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<'consultations' | 'visitors'>('consultations');
 
   // 비밀번호 확인 (실제 서비스에서는 더 안전한 방법 사용)
-  const ADMIN_PASSWORD = 'cldcodchd440'; // 실제로는 환경변수나 더 안전한 방법 사용
+  const ADMIN_PASSWORD = 'cldcodchd5'; // 실제로는 환경변수나 더 안전한 방법 사용
 
   // 컴포넌트 마운트 시 로그인 상태 확인
   useEffect(() => {
