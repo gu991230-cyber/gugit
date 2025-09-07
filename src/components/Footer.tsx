@@ -114,13 +114,13 @@ const Footer = () => {
 
       {/* Call-to-action text placed above the fixed consultation bar */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-right text-white space-y-2 mb-4">
-          <div className="text-lg md:text-xl leading-relaxed">
+        <div className="text-white space-y-3 mb-4">
+          <div className="text-xl md:text-2xl leading-relaxed">
             기다리면 해결될까요? 아닙니다.<br />
             문제는 지금 대응할 때 풀립니다.<br />
             전문가의 차이가 결과의 차이입니다.
           </div>
-          <div className="font-bold text-2xl md:text-3xl leading-snug">
+          <div className="text-right font-bold text-2xl md:text-3xl leading-snug">
             고민하지 마시고 지금 상담신청 남겨주세요.
           </div>
         </div>
