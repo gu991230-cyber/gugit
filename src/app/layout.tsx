@@ -43,7 +43,7 @@ export default function RootLayout({
                   src="/images/THIS.png?v=2"
                   alt="로고"
                   className="w-10 h-10 object-contain"
-                  style={{ mixBlendMode: 'screen' }}
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
                 <span className="text-lg font-bold text-white">박영준 법률사무소</span>
               </Link>

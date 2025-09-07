@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img src="/images/THIS.png?v=2" alt="로고" className="w-12 h-12 object-contain" style={{ mixBlendMode: 'screen' }} />
+              <img src="/images/THIS.png?v=2" alt="로고" className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
               <div>
                  <span className="text-2xl font-bold text-white">
                   박영준 법률사무소
