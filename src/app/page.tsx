@@ -76,7 +76,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('/images/11.PNG')` }}
           />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/85" />
         </div>
         
         <div className="relative z-10 w-full">
@@ -107,9 +107,9 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('/images/558.jpg')` }}
           />
-          <div className="absolute inset-0 bg-black/80" />
-        </div>
-        
+          <div className="absolute inset-0 bg-black/90" />
+          </div>
+
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-white mb-4">선택과 집중 !</h2>
           <p className="text-lg text-center text-gray-200 mb-10">오로지 해오던 전문 분야에서만 활동 합니다.</p>
@@ -239,8 +239,8 @@ export default function Home() {
                     <li>• 대전시 행정심판위원회 위원</li>
                     <li>• 한국사회법학회 자문위원</li>
                   </ul>
-                </div>
-              </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@ export default function Home() {
         WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -370,7 +370,7 @@ export default function Home() {
         WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -447,7 +447,7 @@ export default function Home() {
         WebkitFilter: 'contrast(1.1) saturate(1.1)'
       }}>
         {/* Light Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -471,12 +471,12 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 성공보수제로 진행 가능한가요?</h3>
                 <p className="text-gray-700">사건의 성격과 승소 가능성에 따라 성공보수제 진행이 가능합니다. 일반적으로 착수금 + 성공보수 또는 순수 성공보수제 중 선택하실 수 있습니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 사기 사건은 얼마나 빨리 대응해야 하나요?</h3>
                 <p className="text-gray-700">사기 사건은 시간이 생명입니다. 특히 피해 직후 72시간 이내에 대응하는 것이 중요합니다. 빠른 대응으로 계좌 추적, 재산 보전, 증거 수집이 가능합니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 고소장 접수부터 결과까지 얼마나 걸리나요?</h3>
                 <p className="text-gray-700">형사고소의 경우 2-6개월, 민사소송의 경우 6개월-1년 정도 소요됩니다. 다만 사건의 복잡성과 피고인의 협조 여부에 따라 달라질 수 있습니다.</p>
