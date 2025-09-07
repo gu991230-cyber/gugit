@@ -40,7 +40,7 @@ export default function RootLayout({
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-2">
                 <img
-                  src="/images/THIS.png?v=1"
+                  src="/images/THIS.png?v=2"
                   alt="로고"
                   className="w-10 h-10 object-contain"
                   style={{ mixBlendMode: 'screen' }}
