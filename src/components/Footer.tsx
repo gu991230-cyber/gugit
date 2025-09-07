@@ -10,7 +10,7 @@ const Footer = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url('/images/1445.PNG')` }}
         />
-        <div className="absolute inset-0 bg-gray-900/80" />
+        <div className="absolute inset-0 bg-gray-900/95" />
       </div>
       
       {/* Main Footer Content */}
