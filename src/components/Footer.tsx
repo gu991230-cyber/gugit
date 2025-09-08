@@ -17,9 +17,9 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col space-y-8">
           {/* Company Info Section - Top */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-x-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 xl:gap-16 items-start justify-items-start">
           {/* Company Info */}
-          <div>
+          <div className="w-full">
             <div className="flex items-center space-x-3 mb-6">
               <img src="/images/THIS.png?v=2" alt="로고" className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
               <div className="flex-1 min-w-0">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="w-full">
                          <h3 className="text-lg font-semibold mb-6 text-orange-500">빠른 링크</h3>
             <ul className="space-y-3">
               <li>
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="w-full">
             <h3 className="text-lg font-semibold mb-6 text-orange-500">전문 분야</h3>
             <ul className="space-y-3">
               <li className="text-gray-300 text-sm">• 입찰권 분야</li>
@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
 
           {/* Office Hours */}
-          <div>
+          <div className="w-full">
             <h3 className="text-lg font-semibold mb-6 text-orange-500 flex items-center">
               <Clock className="h-4 w-4" />
               <span className="ml-2">운영 시간</span>
