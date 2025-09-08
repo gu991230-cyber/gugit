@@ -1,6 +1,6 @@
 [build]
   command = "CI='' npm run build"
-  publish = " .next"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20"       
