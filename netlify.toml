@@ -1,9 +1,9 @@
 [build]
   command = "CI='' npm run build"
-  publish = ".next"
+  publish = " .next"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "20"       
 
 # Next.js 표준 배포 설정: 추가 컨텍스트 강제 설정 제거
 
