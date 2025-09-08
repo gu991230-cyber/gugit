@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
+  // Updated footer layout with proper spacing and alignment
   return (
     <footer className="relative bg-gray-800 text-white pb-8">
       {/* Background Image with Overlay */}
