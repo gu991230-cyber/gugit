@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <div className="relative bg-gray-800 text-white pb-8">
+    <footer className="relative bg-gray-800 text-white pb-8">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div 
@@ -21,7 +21,12 @@ const Footer = () => {
             {/* Company Info */}
             <div className="w-full">
               <div className="flex items-center space-x-3 mb-6">
-                <img src="/images/THIS.png?v=2" alt="로고" className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img 
+                  src="/images/THIS.png?v=2" 
+                  alt="로고" 
+                  className="w-12 h-12 object-contain" 
+                  style={{ filter: 'brightness(0) invert(1)' }} 
+                />
                 <div className="flex-1 min-w-0">
                   <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white whitespace-nowrap">
                     박영준 법률사무소
@@ -136,7 +141,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
