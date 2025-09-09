@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gray-800 text-white pb-8">
+    <div className="relative bg-gray-800 text-white pb-8">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div 
@@ -136,7 +136,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 
