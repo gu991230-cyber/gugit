@@ -4,7 +4,6 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="relative bg-gray-800 text-white pb-8">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -13,12 +12,9 @@ const Footer = () => {
         <div className="absolute inset-0 bg-gray-900/95" />
       </div>
       
-      {/* Main Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col space-y-8">
-          {/* Company Info Section - Top */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 xl:gap-16 items-start justify-items-start">
-            {/* Company Info */}
             <div className="w-full">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
@@ -42,7 +38,6 @@ const Footer = () => {
                 최선을 다하겠습니다.
               </p>
               
-              {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-orange-500" />
@@ -55,7 +50,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links */}
             <div className="w-full">
               <h3 className="text-lg font-semibold mb-6 text-orange-500">빠른 링크</h3>
               <ul className="space-y-3">
@@ -82,7 +76,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Services */}
             <div className="w-full">
               <h3 className="text-lg font-semibold mb-6 text-orange-500">전문 분야</h3>
               <ul className="space-y-3">
@@ -93,7 +86,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Office Hours */}
             <div className="w-full">
               <h3 className="text-lg font-semibold mb-6 text-orange-500 flex items-center">
                 <Clock className="h-4 w-4" />
@@ -116,7 +108,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Call-to-action text - Bottom Right */}
           <div className="flex justify-end">
             <div className="text-white text-right">
               <div className="text-2xl md:text-3xl leading-relaxed">
@@ -130,7 +121,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="relative z-10 border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
