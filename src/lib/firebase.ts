@@ -23,8 +23,9 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
 
-// Initialize Analytics (only in browser environment)
-export const analytics = typeof window !== 'undefined' ? getAnalytics(app) : null;
+// Initialize Analytics (temporarily disabled)
+// export const analytics = typeof window !== 'undefined' ? getAnalytics(app) : null;
+export const analytics = null;
 
 // Firebase 연결 테스트
 console.log('Firebase 초기화 완료');
