@@ -27,10 +27,11 @@ export const storage = getStorage(app);
 // export const analytics = typeof window !== 'undefined' ? getAnalytics(app) : null;
 export const analytics = null;
 
-// Firebase 연결 테스트
-console.log('🔥 Firebase 초기화 완료 - 새 설정 적용됨');
-console.log('🔥 프로젝트 ID:', firebaseConfig.projectId);
-console.log('🔥 API Key:', firebaseConfig.apiKey.substring(0, 10) + '...');
-console.log('🔥 Firestore 객체:', db);
+// Firebase 연결 테스트 - 강제 배포 트리거
+console.log('🚀🚀🚀 Firebase 초기화 완료 - 강제 배포 트리거 🚀🚀🚀');
+console.log('🚀 프로젝트 ID:', firebaseConfig.projectId);
+console.log('🚀 API Key:', firebaseConfig.apiKey.substring(0, 10) + '...');
+console.log('🚀 Firestore 객체:', db);
+console.log('🚀 현재 시간:', new Date().toISOString());
 
 export default app; 
