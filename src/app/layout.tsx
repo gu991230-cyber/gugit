@@ -40,7 +40,7 @@ export default function RootLayout({
 
   const handleConsultationSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('폼 제출 시작됨');
+    console.log('🚀🚀🚀 폼 제출 시작됨 - handleConsultationSubmit 호출됨');
     setIsSubmitting(true);
     setSubmitMessage('');
 
@@ -49,19 +49,23 @@ export default function RootLayout({
     const phone = formData.get('phone') as string;
     const privacy = formData.get('privacy') as string;
 
-    console.log('폼 데이터:', { name, phone, privacy });
+    console.log('🚀 폼 데이터:', { name, phone, privacy });
 
     if (!name || !phone) {
+      console.log('🚀 유효성 검사 실패: 이름 또는 연락처 누락');
       setSubmitMessage('이름과 연락처를 모두 입력해주세요.');
       setIsSubmitting(false);
       return;
     }
 
     if (!privacy) {
+      console.log('🚀 유효성 검사 실패: 개인정보 동의 누락');
       setSubmitMessage('개인정보 수집 동의를 체크해주세요.');
       setIsSubmitting(false);
       return;
     }
+
+    console.log('🚀 유효성 검사 통과, Firebase 저장 시도...');
 
     try {
       console.log('Firebase에 데이터 저장 시도...');
