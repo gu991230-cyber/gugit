@@ -28,8 +28,9 @@ export const storage = getStorage(app);
 export const analytics = null;
 
 // Firebase 연결 테스트
-console.log('Firebase 초기화 완료');
-console.log('프로젝트 ID:', firebaseConfig.projectId);
-console.log('Firestore 객체:', db);
+console.log('🔥 Firebase 초기화 완료 - 새 설정 적용됨');
+console.log('🔥 프로젝트 ID:', firebaseConfig.projectId);
+console.log('🔥 API Key:', firebaseConfig.apiKey.substring(0, 10) + '...');
+console.log('🔥 Firestore 객체:', db);
 
 export default app; 
