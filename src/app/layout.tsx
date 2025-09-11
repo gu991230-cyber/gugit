@@ -40,6 +40,7 @@ export default function RootLayout({
 
   const handleConsultationSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log('폼 제출 시작됨');
     setIsSubmitting(true);
     setSubmitMessage('');
 
@@ -47,6 +48,8 @@ export default function RootLayout({
     const name = formData.get('name') as string;
     const phone = formData.get('phone') as string;
     const privacy = formData.get('privacy') as string;
+
+    console.log('폼 데이터:', { name, phone, privacy });
 
     if (!name || !phone) {
       setSubmitMessage('이름과 연락처를 모두 입력해주세요.');
@@ -61,7 +64,10 @@ export default function RootLayout({
     }
 
     try {
-      await addDoc(collection(db, 'consultations'), {
+      console.log('Firebase에 데이터 저장 시도...');
+      console.log('Firebase db 객체:', db);
+      
+      const docRef = await addDoc(collection(db, 'consultations'), {
         name: name,
         phone: phone,
         service: '빠른 상담 신청',
@@ -72,6 +78,7 @@ export default function RootLayout({
         source: 'fixed-bottom-bar'
       });
 
+      console.log('문서가 성공적으로 저장됨:', docRef.id);
       setSubmitMessage('상담 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.');
       
       // 폼 초기화
@@ -79,7 +86,7 @@ export default function RootLayout({
       
     } catch (error) {
       console.error('상담 신청 오류:', error);
-      setSubmitMessage('상담 신청 중 오류가 발생했습니다. 다시 시도해주세요.');
+      setSubmitMessage(`상담 신청 중 오류가 발생했습니다: ${error.message}`);
     } finally {
       setIsSubmitting(false);
     }
