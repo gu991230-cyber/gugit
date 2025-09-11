@@ -1,4 +1,4 @@
- 'use client';
+'use client';
 
 import { useEffect } from 'react';
 import { db } from '@/lib/firebase';
@@ -466,7 +466,7 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 사기 피해 금액이 적어도 소송이 가능한가요?</h3>
                 <p className="text-gray-700">피해 금액의 크기보다는 사건의 성격과 승소 가능성이 중요합니다. 소액이라도 명백한 사기 사건이라면 소송 진행이 가능합니다.</p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Q. 성공보수제로 진행 가능한가요?</h3>
                 <p className="text-gray-700">사건의 성격과 승소 가능성에 따라 성공보수제 진행이 가능합니다. 일반적으로 착수금 + 성공보수 또는 순수 성공보수제 중 선택하실 수 있습니다.</p>
